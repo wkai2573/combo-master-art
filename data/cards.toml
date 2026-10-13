@@ -50,8 +50,8 @@ kind = "move"
 cls = "劍士"
 traits = ["變化"]
 text = "[經_怒3]：當傷害計算時，且對方給予的傷害 > 我方給予的傷害，將怒氣區上方 1 張卡加入手牌。"
-subject = "a battle-scarred barbarian roaring in fury with veins pulsing and a fierce crimson vengeful aura bursting outward"
-details = "bared teeth in savage battle cry, sonic shockwave rippling the air, flying gravel, dramatic backlit rim lighting"
+subject = "a massive battle-scarred double-headed axe radiating an explosive crimson vengeful shockwave tearing through dry earth"
+details = "sonic shockwaves rippling the air, flying cracked stones and embers, fierce blood-red aura burst, dynamic kinetic weapon momentum"
 
 [[cards]]
 id = "A41"
@@ -60,7 +60,7 @@ kind = "move"
 cls = "法師"
 traits = ["法術"]
 text = "[頂]：我方 −3+0。\n[追]：此卡追擊判定失敗。"
-subject = "a raw concussive magical blast erupting from a spellcaster's palms, shattering the immediate terrain"
+subject = "a raw concussive magical blast erupting violently forward, shattering the immediate terrain into jagged fragments"
 details = "chaotic glowing energy tendrils, explosive shockwave ring, flying stone fragments, blinding white-blue core"
 
 [[cards]]
@@ -80,8 +80,8 @@ kind = "move"
 cls = "盜賊"
 traits = ["攻擊"]
 text = "[先]：此回合我方 +4+0。"
-subject = "a shadowy figure lunging from darkness with a swift lethal downward dagger strike"
-details = "motion blur streaks, moonlight catching the razor-sharp edge, cloak billowing in sudden violent motion"
+subject = "a sinister jagged curved dagger thrusting out from deep pitch-black shadows into moonlight with lethal speed"
+details = "swift motion blur streaks, cold moonlight glinting on poisoned steel tip, disturbed dust motes in sudden violent strike"
 
 [[cards]]
 id = "A44"
@@ -90,8 +90,8 @@ kind = "move"
 cls = "盜賊"
 traits = ["攻擊"]
 text = "[頂]：追擊+1。"
-subject = "an agile dual-wielding fighter executing a rapid cross-slash combo with curved sabers"
-details = "twin glowing weapon trails crossing in an X shape, sliced fabric in the air, low stance dynamic kinetic momentum"
+subject = "two curved steel sabers crossing in mid-air to unleash a blazing golden X-shaped cross-slash shockwave"
+details = "twin glowing energy trails forming a lethal cross, sliced fabric fluttering in wind vortices, fiery sparks bursting from blade clash"
 
 [[cards]]
 id = "A45"
@@ -100,8 +100,8 @@ kind = "move"
 cls = "商人"
 traits = ["市場", "回復"]
 text = "[經]：當此卡被蓋為裏側時，回復1。"
-subject = "a clever trader scooping up rare gemstones and gold coins spilled across a velvet counter at a bargain"
-details = "glinting gold reflection in eyes, hand raking in treasure, satisfied grin, warm lantern light"
+subject = "an antique velvet merchant counter overflowing with spilled raw gemstones, heaps of lustrous gold coins, and brass balance scales"
+details = "warm candlelight reflecting off polished rubies and emeralds, antique brass weights, ledger scrolls, treasure still life close-up"
 
 [[cards]]
 id = "A46"
@@ -110,8 +110,8 @@ kind = "move"
 cls = "商人"
 traits = ["市場"]
 text = "[經]：當此卡被蓋為裏側時，抽1。"
-subject = "an opulent auctioneer slamming a golden gavel down triumphantly amidst flying contracts and currency"
-details = "dramatic auction podium, shining piles of gold bullion, celebratory energetic gesture, rich deep mahogany background"
+subject = "a golden auction gavel slamming down triumphantly onto an ornate mahogany podium amidst flying contracts, currency and gold bullion"
+details = "dramatic auction podium, shining piles of gold bullion, burst of parchment contracts flying mid-air, rich deep mahogany background"
 
 [[cards]]
 id = "A47"
@@ -130,8 +130,8 @@ kind = "move"
 cls = "盜賊"
 traits = ["變化"]
 text = "[發_蓋X]：抽X，此回合我方 +0−X。X最大為2。"
-subject = "a pickpocket's nimble hand skillfully lifting a heavy leather coin purse from an unsuspecting belt mid-crowd"
-details = "swift stealthy finger movement, loosened knot, bustling tavern crowd in soft background blur, tense heist moment"
+subject = "a heavy embroidered leather coin purse silently snatched away into shadows, severing its delicate belt cords"
+details = "spilled golden coins frozen mid-air, loosened silk knots, swift kinetic momentum, dark tavern shadows in soft blur, tense heist still life"
 
 [[cards]]
 id = "A49"
@@ -140,8 +140,8 @@ kind = "move"
 cls = "商人"
 traits = ["變化"]
 text = "[發_蓋X]：抽X，再將 X 張手牌放到牌組底。X最大為3。"
-subject = "two silhouettes in shadowy candlelit parlor leaning over an official wax-sealed diplomatic treaty"
-details = "quill pen hovering over parchment, calculating intense expressions, smoke curling from smoking pipe, intense negotiation"
+subject = "an ornate diplomatic treaty with a deep red wax seal and an antique raven feather quill poised on parchment under candlelight"
+details = "flickering candlelight shadows, curling tobacco smoke across polished mahogany table, ink droplets on formal contract, tense atmosphere"
 
 [[cards]]
 id = "A50"
@@ -150,8 +150,8 @@ kind = "move"
 cls = "法師"
 traits = ["法術", "冰"]
 text = "[頂_蓋2]：當傷害計算時，捨棄我方 X 張裏側經驗，減少受到的 X 點傷害。X 最大為將受到的傷害。"
-subject = "crystalline thick ice armor instantly freezing around a mage's torso and limbs, deflecting incoming blows"
-details = "fractured frost crystals, chilling blue mist cascading down, incoming weapon bouncing off impenetrable icy barrier"
+subject = "a translucent crystalline frost barrier and jagged ice plate armor forming mid-air, deflecting incoming shattered sparks"
+details = "fractured frost crystals, chilling azure mist cascading downward, deflected projectile shattering against the frozen wall"
 
 [[cards]]
 id = "A51"
@@ -160,8 +160,8 @@ kind = "move"
 cls = "劍士"
 traits = ["攻擊"]
 text = "[頂]：若我方戰鬥區的招式卡的原始攻擊力小於原始防禦力，則該卡的攻擊力改為原始防禦力。"
-subject = "a heavy armored warrior violently slamming the rim of an iron tower shield directly into the foe's guard"
-details = "massive kinetic impact shockwave, crushing force sparks, flying spit and sweat, heavy braced posture"
+subject = "a heavy reinforced steel tower shield violently slamming forward, unleashing a massive concussive kinetic shockwave"
+details = "crushing impact sparks bursting outward, shattered stone floor, air rippling from concussive force, dynamic martial impact"
 
 [[cards]]
 id = "A52"
@@ -170,8 +170,8 @@ kind = "move"
 cls = "商人"
 traits = ["市場"]
 text = "[發_蓋4]：當此卡打出後，雙方立即收招。"
-subject = "a decisive trader severing an entangled rope bridge with a single swift cut to preserve the caravan"
-details = "snapping hemp ropes under tension, clean slice with a machete, calm calculated stare amidst chaotic backdrop"
+subject = "a taut suspended hemp rope bridge severed by a razor-sharp machete slash in a single clean split"
+details = "unraveling hemp fibers snapping under extreme tension, splintering wooden planks falling into misty abyss, decisive swift cut"
 
 [[cards]]
 id = "A53"
@@ -190,8 +190,8 @@ kind = "move"
 cls = "劍士"
 traits = ["變化"]
 text = "[經]：我方 +X+X。X＝我方戰鬥區白板卡的數量。\n[經]：當回合開始時，必須蓋前 2 張表側經驗。"
-subject = "a battered common militia soldier standing defiantly with a simple chipped sword against overwhelming darkness"
-details = "bloodied bandages, unwavering fiery spirit in eyes, golden courage aura shining through ragged peasant clothing"
+subject = "a simple chipped and notched iron sword driven upright into cracked stone ground, radiating an unyielding radiant golden aura against pitch-black darkness"
+details = "scratched weathered blade catching holy dawn light, swirling golden embers of courage rising from stone, defiance in darkness"
 
 [[cards]]
 id = "A55"
@@ -220,8 +220,8 @@ kind = "move"
 cls = "盜賊"
 traits = ["變化", "毒"]
 text = "[發_蓋2]：當歸還時，將 [Ex-中毒] 加入對方經驗。"
-subject = "a rogue carefully dripping thick viscous emerald poison along the jagged serrated groove of a curved stiletto"
-details = "venomous droplet hanging from vial rim, toxic green glint on steel, gloved fingertips, dimly lit dungeon corner"
+subject = "a tipped dark vial dripping thick viscous emerald venom along the serrated fuller of an antique stiletto blade"
+details = "venomous droplet hanging from vial rim, toxic green glint on steel, emerald vapor curling into the air, gloomy dungeon still life close-up"
 
 [[cards]]
 id = "A58"
@@ -250,8 +250,8 @@ kind = "move"
 cls = "弓箭手"
 traits = ["變化"]
 text = "[發_蓋4]：抽2，再選擇 1 張手牌放到牌組頂。"
-subject = "a sniper bow drawn to absolute maximum tension with swirling spiral wind condensing around the arrow tip"
-details = "groaning wooden bow limbs, taut trembling bowstring, hyper-concentrated eye visible under hood, suspended dust particles"
+subject = "a heavy compound sniper bow drawn to absolute maximum tension with swirling spiral wind condensing around the broadhead arrow"
+details = "groaning wooden bow limbs, taut trembling bowstring, focused target reticle glinting on steel tip, suspended dust particles"
 
 [[cards]]
 id = "A61"
@@ -261,7 +261,7 @@ cls = "劍士"
 traits = ["攻擊", "火"]
 text = "[發_怒3]：對方直擊1。"
 subject = "a heavy greatsword superheated into glowing molten lava crashing into the ground with splashing magma"
-details = "molten rock sprays, glowing fissure cracking open on earth, intense heat haze, radiant orange light reflecting off armor"
+details = "molten rock sprays, glowing fissure cracking open on earth, intense heat haze, radiant orange light reflecting off stone"
 
 [[cards]]
 id = "A63"
@@ -280,8 +280,8 @@ kind = "move"
 cls = "劍士"
 traits = ["變化"]
 text = "此卡只能在先手步驟出招，出招時必須支付 [蓋2]。\n[先]：當對方收招時，且對方戰鬥區沒有招式，我方可以繼續出招，不直接進入傷害計算。\n當傷害計算時，我方 +0−4X。X＝我方招式卡疊的卡數。"
-subject = "an armored warrior banging a sword against a dented shield with a mocking wide grin provoking all nearby enemies"
-details = "clanging metal soundwaves, arrogant tilted chin, enemy shadows turning aggressively toward him, battle frenzy"
+subject = "a notched iron broadsword violently clashing against a battered bronze shield boss in mid-air, sending clanging metallic soundwaves rippling outward"
+details = "visible circular sonic shockwaves, brilliant yellow sparks showering off dented metal, aggressive weapon provocation, tense martial clash"
 
 [[cards]]
 id = "A65"
@@ -290,8 +290,8 @@ kind = "move"
 cls = "弓箭手"
 traits = ["攻擊", "回復"]
 text = "[頂]：當我方追擊判定成功時，回復 2。"
-subject = "a barbed enchanted arrow extracting swirling crimson life essence from a target, siphoning back to the archer"
-details = "glowing scarlet energy strands weaving into the bow, rejuvenating soft glow around wounds, dynamic vampire archer feel"
+subject = "a cruel barbed enchanted arrow trailing luminous scarlet life essence threads siphoned from an impact point"
+details = "swirling crimson vitality streams twisting like blood ribbons around arrow shaft, eerie vibrant glow, dark atmospheric depth"
 
 [[cards]]
 id = "A68"
@@ -443,7 +443,7 @@ slot = "飾品"
 traits = []
 text = "[蓋1_怒2]：當回合開始時，回復1。"
 subject = "a cherished vintage miniature family portrait in a tarnished silver locket with cracked glass"
-details = "faded sepia tones showing a warm embrace, dried pressed flower petal beside it, resting on a soldier's scarred armor plate"
+details = "faded sepia tones showing a warm embrace, dried pressed flower petal beside it, resting on a scarred steel armor plate"
 
 [[cards]]
 id = "E3"

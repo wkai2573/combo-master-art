@@ -60,11 +60,19 @@ def generate_with_gemini_browser(prompt_info: dict, host: str = "http://127.0.0.
         print("[!] 尚未安裝 playwright，請先執行 pip install playwright。")
         return None
 
-    prompt_text = (
-        f"請生成一張 16:9 橫向卡牌插畫：\n"
-        f"{prompt_info['positive_prompt']}\n"
-        f"完全不要出現文字、文字標籤或外框。"
-    )
+    if prompt_info.get("kind") != "character":
+        prompt_text = (
+            f"請生成一張 16:9 橫向卡牌插畫：\n"
+            f"【核心構圖約束】：畫面中絕對不要出現任何人物、角色、人類肢體、全身或半身人物（strictly no humans, no people, no characters, no faces）。視覺焦點必須 100% 集中於武器本體、斬擊劍氣、魔法衝擊波、道具物件、金幣或戰場靜物本身。\n"
+            f"【插畫內容描述】：{prompt_info['positive_prompt']}\n"
+            f"完全不要出現文字、文字標籤或外框。"
+        )
+    else:
+        prompt_text = (
+            f"請生成一張 16:9 橫向卡牌插畫：\n"
+            f"【插畫內容描述】：{prompt_info['positive_prompt']}\n"
+            f"完全不要出現文字、文字標籤或外框。"
+        )
 
     try:
         import time
