@@ -1,0 +1,13 @@
+{
+  "name": "combo-master-art",
+  "version": "1.0.0",
+  "private": true,
+  "description": "連擊大師 卡牌卡圖自動化流水線",
+  "scripts": {
+    "import": "python scripts/import_cards.py",
+    "import:force": "python scripts/import_cards.py --force",
+    "prompts": "python scripts/build_prompts.py",
+    "process": "python scripts/process_cards.py"
+  }
+}
+

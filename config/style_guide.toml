@@ -1,0 +1,25 @@
+# ==========================================
+# 連擊大師 視覺風格指南 (Unified Style Guide)
+# ==========================================
+
+[meta]
+version = "2.0.0"
+theme = "Classical Academic Oil Painting & Martial Arts Fine Art"
+target_width = 200
+target_height = 120
+aspect_ratio = "5:3"
+
+[style]
+aesthetic = "Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture"
+lighting = "Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy"
+colors = "Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones"
+atmosphere = "Atmospheric dust motes, drifting ash or wind currents, gritty textured environment"
+
+# 依卡片類型 (kind) 切分的構圖視角
+composition_move = "Dynamic combat action framing, intense martial motion, powerful strike impact, cinematic wide shot"
+composition_equip = "Ground-level still life angle, focused artifact composition, pristine weapon and item close-up, dramatic lighting"
+composition_character = "Upper-body heroic character portrait, expressive combat-ready stance, atmospheric depth, focused gaze"
+composition_ex = "Visceral affliction close-up, ominous dark aura swirling, haunting symbolic framing, intense mood"
+composition_buff = "Ethereal spiritual aura, flowing vital energy currents, meditative posture, glowing mystical atmosphere"
+
+negative_prompt = "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs"

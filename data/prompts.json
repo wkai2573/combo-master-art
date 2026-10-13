@@ -1,0 +1,710 @@
+[
+  {
+    "id": "A37",
+    "name": "魅影射擊",
+    "kind": "move",
+    "cls": "弓箭手",
+    "slot": "",
+    "traits": [
+      "攻擊"
+    ],
+    "text": "[追]：我方 +0+4。",
+    "positive_prompt": "an ethereal archer in motion releasing a phantom translucent arrow that splits into spectral duplicates, ghostly cyan glow, blurred motion trail, dynamic archery release pose, dark misty forest atmosphere, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Dynamic combat action framing, intense martial motion, powerful strike impact, cinematic wide shot",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "A37.avif"
+  },
+  {
+    "id": "A38",
+    "name": "地雷陷阱",
+    "kind": "move",
+    "cls": "弓箭手",
+    "slot": "",
+    "traits": [
+      "陷阱"
+    ],
+    "text": "[追]：我方 +3+0。",
+    "positive_prompt": "a concealed mechanical pressure mine suddenly detonating with fire and shrapnel hidden beneath dry leaves, flying soil and fiery spark bursts, tripwire snapping, explosive shockwave radiating outward, tense ambush visual, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Dynamic combat action framing, intense martial motion, powerful strike impact, cinematic wide shot",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "A38.avif"
+  },
+  {
+    "id": "A39",
+    "name": "戒備打擊",
+    "kind": "move",
+    "cls": "劍士",
+    "slot": "",
+    "traits": [
+      "攻擊"
+    ],
+    "text": "[頂]：我方 +1+2。",
+    "positive_prompt": "a disciplined warrior thrusting a short sword forward while maintaining a rock-solid guard behind a buckler, sparks flying from steel collision, rigid poised footwork, controlled kinetic force, focused determined eyes, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Dynamic combat action framing, intense martial motion, powerful strike impact, cinematic wide shot",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "A39.avif"
+  },
+  {
+    "id": "A40",
+    "name": "復仇之嚎",
+    "kind": "move",
+    "cls": "劍士",
+    "slot": "",
+    "traits": [
+      "變化"
+    ],
+    "text": "[經_怒3]：當傷害計算時，且對方給予的傷害 > 我方給予的傷害，將怒氣區上方 1 張卡加入手牌。",
+    "positive_prompt": "a battle-scarred barbarian roaring in fury with veins pulsing and a fierce crimson vengeful aura bursting outward, bared teeth in savage battle cry, sonic shockwave rippling the air, flying gravel, dramatic backlit rim lighting, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Dynamic combat action framing, intense martial motion, powerful strike impact, cinematic wide shot",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "A40.avif"
+  },
+  {
+    "id": "A41",
+    "name": "力量爆破",
+    "kind": "move",
+    "cls": "法師",
+    "slot": "",
+    "traits": [
+      "法術"
+    ],
+    "text": "[頂]：我方 −3+0。\n[追]：此卡追擊判定失敗。",
+    "positive_prompt": "a raw concussive magical blast erupting from a spellcaster's palms, shattering the immediate terrain, chaotic glowing energy tendrils, explosive shockwave ring, flying stone fragments, blinding white-blue core, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Dynamic combat action framing, intense martial motion, powerful strike impact, cinematic wide shot",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "A41.avif"
+  },
+  {
+    "id": "A42",
+    "name": "電弧",
+    "kind": "move",
+    "cls": "法師",
+    "slot": "",
+    "traits": [
+      "法術",
+      "電"
+    ],
+    "text": "[發_蓋1]：抽X，再將 X 張手牌放到牌組底。X＝對方戰鬥區的招式數量。",
+    "positive_prompt": "a ferocious branching lightning arc leaping across the battlefield between metallic targets, brilliant electric violet discharge, scorched ground, crackling ozone sparks, high contrast dynamic lighting, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Dynamic combat action framing, intense martial motion, powerful strike impact, cinematic wide shot",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "A42.avif"
+  },
+  {
+    "id": "A43",
+    "name": "伏擊",
+    "kind": "move",
+    "cls": "盜賊",
+    "slot": "",
+    "traits": [
+      "攻擊"
+    ],
+    "text": "[先]：此回合我方 +4+0。",
+    "positive_prompt": "a shadowy figure lunging from darkness with a swift lethal downward dagger strike, motion blur streaks, moonlight catching the razor-sharp edge, cloak billowing in sudden violent motion, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Dynamic combat action framing, intense martial motion, powerful strike impact, cinematic wide shot",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "A43.avif"
+  },
+  {
+    "id": "A44",
+    "name": "二刀連擊",
+    "kind": "move",
+    "cls": "盜賊",
+    "slot": "",
+    "traits": [
+      "攻擊"
+    ],
+    "text": "[頂]：追擊+1。",
+    "positive_prompt": "an agile dual-wielding fighter executing a rapid cross-slash combo with curved sabers, twin glowing weapon trails crossing in an X shape, sliced fabric in the air, low stance dynamic kinetic momentum, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Dynamic combat action framing, intense martial motion, powerful strike impact, cinematic wide shot",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "A44.avif"
+  },
+  {
+    "id": "A45",
+    "name": "低價買進",
+    "kind": "move",
+    "cls": "商人",
+    "slot": "",
+    "traits": [
+      "市場",
+      "回復"
+    ],
+    "text": "[經]：當此卡被蓋為裏側時，回復1。",
+    "positive_prompt": "a clever trader scooping up rare gemstones and gold coins spilled across a velvet counter at a bargain, glinting gold reflection in eyes, hand raking in treasure, satisfied grin, warm lantern light, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Dynamic combat action framing, intense martial motion, powerful strike impact, cinematic wide shot",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "A45.avif"
+  },
+  {
+    "id": "A46",
+    "name": "高價賣出",
+    "kind": "move",
+    "cls": "商人",
+    "slot": "",
+    "traits": [
+      "市場"
+    ],
+    "text": "[經]：當此卡被蓋為裏側時，抽1。",
+    "positive_prompt": "an opulent auctioneer slamming a golden gavel down triumphantly amidst flying contracts and currency, dramatic auction podium, shining piles of gold bullion, celebratory energetic gesture, rich deep mahogany background, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Dynamic combat action framing, intense martial motion, powerful strike impact, cinematic wide shot",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "A46.avif"
+  },
+  {
+    "id": "A47",
+    "name": "狙擊印記",
+    "kind": "move",
+    "cls": "弓箭手",
+    "slot": "",
+    "traits": [
+      "印記"
+    ],
+    "text": "[先]：此回合我方的瞄準升級1。",
+    "positive_prompt": "a glowing red runic reticle magically locking onto a distant adversary's vital spot through heavy fog, focused crosshair luminescence, faint heartbeat ripple effect, crisp distant target silhouette, extreme focus, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Dynamic combat action framing, intense martial motion, powerful strike impact, cinematic wide shot",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "A47.avif"
+  },
+  {
+    "id": "A48",
+    "name": "順手牽羊",
+    "kind": "move",
+    "cls": "盜賊",
+    "slot": "",
+    "traits": [
+      "變化"
+    ],
+    "text": "[發_蓋X]：抽X，此回合我方 +0−X。X最大為2。",
+    "positive_prompt": "a pickpocket's nimble hand skillfully lifting a heavy leather coin purse from an unsuspecting belt mid-crowd, swift stealthy finger movement, loosened knot, bustling tavern crowd in soft background blur, tense heist moment, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Dynamic combat action framing, intense martial motion, powerful strike impact, cinematic wide shot",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "A48.avif"
+  },
+  {
+    "id": "A49",
+    "name": "交涉",
+    "kind": "move",
+    "cls": "商人",
+    "slot": "",
+    "traits": [
+      "變化"
+    ],
+    "text": "[發_蓋X]：抽X，再將 X 張手牌放到牌組底。X最大為3。",
+    "positive_prompt": "two silhouettes in shadowy candlelit parlor leaning over an official wax-sealed diplomatic treaty, quill pen hovering over parchment, calculating intense expressions, smoke curling from smoking pipe, intense negotiation, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Dynamic combat action framing, intense martial motion, powerful strike impact, cinematic wide shot",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "A49.avif"
+  },
+  {
+    "id": "A50",
+    "name": "冰霜護甲",
+    "kind": "move",
+    "cls": "法師",
+    "slot": "",
+    "traits": [
+      "法術",
+      "冰"
+    ],
+    "text": "[頂_蓋2]：當傷害計算時，捨棄我方 X 張裏側經驗，減少受到的 X 點傷害。X 最大為將受到的傷害。",
+    "positive_prompt": "crystalline thick ice armor instantly freezing around a mage's torso and limbs, deflecting incoming blows, fractured frost crystals, chilling blue mist cascading down, incoming weapon bouncing off impenetrable icy barrier, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Dynamic combat action framing, intense martial motion, powerful strike impact, cinematic wide shot",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "A50.avif"
+  },
+  {
+    "id": "A51",
+    "name": "盾擊",
+    "kind": "move",
+    "cls": "劍士",
+    "slot": "",
+    "traits": [
+      "攻擊"
+    ],
+    "text": "[頂]：若我方戰鬥區的招式卡的原始攻擊力小於原始防禦力，則該卡的攻擊力改為原始防禦力。",
+    "positive_prompt": "a heavy armored warrior violently slamming the rim of an iron tower shield directly into the foe's guard, massive kinetic impact shockwave, crushing force sparks, flying spit and sweat, heavy braced posture, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Dynamic combat action framing, intense martial motion, powerful strike impact, cinematic wide shot",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "A51.avif"
+  },
+  {
+    "id": "A52",
+    "name": "即時停損",
+    "kind": "move",
+    "cls": "商人",
+    "slot": "",
+    "traits": [
+      "市場"
+    ],
+    "text": "[發_蓋4]：當此卡打出後，雙方立即收招。",
+    "positive_prompt": "a decisive trader severing an entangled rope bridge with a single swift cut to preserve the caravan, snapping hemp ropes under tension, clean slice with a machete, calm calculated stare amidst chaotic backdrop, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Dynamic combat action framing, intense martial motion, powerful strike impact, cinematic wide shot",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "A52.avif"
+  },
+  {
+    "id": "A53",
+    "name": "二連矢",
+    "kind": "move",
+    "cls": "弓箭手",
+    "slot": "",
+    "traits": [
+      "攻擊"
+    ],
+    "text": "[追]：追擊+1。",
+    "positive_prompt": "two razor-tipped arrows flying in tight tandem through the air, trailing dual spiraling wind vortices, wind tunnel wake, feathers trembling in high velocity flight, glistening steel arrowheads aiming ahead, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Dynamic combat action framing, intense martial motion, powerful strike impact, cinematic wide shot",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "A53.avif"
+  },
+  {
+    "id": "A54",
+    "name": "凡骨的意志",
+    "kind": "move",
+    "cls": "劍士",
+    "slot": "",
+    "traits": [
+      "變化"
+    ],
+    "text": "[經]：我方 +X+X。X＝我方戰鬥區白板卡的數量。\n[經]：當回合開始時，必須蓋前 2 張表側經驗。",
+    "positive_prompt": "a battered common militia soldier standing defiantly with a simple chipped sword against overwhelming darkness, bloodied bandages, unwavering fiery spirit in eyes, golden courage aura shining through ragged peasant clothing, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Dynamic combat action framing, intense martial motion, powerful strike impact, cinematic wide shot",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "A54.avif"
+  },
+  {
+    "id": "A55",
+    "name": "卸除鎧甲",
+    "kind": "move",
+    "cls": "盜賊",
+    "slot": "",
+    "traits": [
+      "變化"
+    ],
+    "text": "[發_蓋2]：選擇對方 1 張裝備或增益卡捨棄。",
+    "positive_prompt": "a razor-sharp curved parrying dagger twisting and snapping the leather straps of heavy plate armor, broken buckles and steel armor pieces flying apart in mid-air, exposed enemy vulnerability, swift precision motion, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Dynamic combat action framing, intense martial motion, powerful strike impact, cinematic wide shot",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "A55.avif"
+  },
+  {
+    "id": "A56",
+    "name": "火球",
+    "kind": "move",
+    "cls": "法師",
+    "slot": "",
+    "traits": [
+      "法術",
+      "火"
+    ],
+    "text": "[發_蓋3]：對方直擊2。",
+    "positive_prompt": "a colossal swirling fiery sphere of molten plasma hurling forward leaving a scorched blazing trail, crackling orange flames, burning embers flying, intense heat distortion waves bending the background, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Dynamic combat action framing, intense martial motion, powerful strike impact, cinematic wide shot",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "A56.avif"
+  },
+  {
+    "id": "A57",
+    "name": "塗毒",
+    "kind": "move",
+    "cls": "盜賊",
+    "slot": "",
+    "traits": [
+      "變化",
+      "毒"
+    ],
+    "text": "[發_蓋2]：當歸還時，將 [Ex-中毒] 加入對方經驗。",
+    "positive_prompt": "a rogue carefully dripping thick viscous emerald poison along the jagged serrated groove of a curved stiletto, venomous droplet hanging from vial rim, toxic green glint on steel, gloved fingertips, dimly lit dungeon corner, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Dynamic combat action framing, intense martial motion, powerful strike impact, cinematic wide shot",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "A57.avif"
+  },
+  {
+    "id": "A58",
+    "name": "Explosion!",
+    "kind": "move",
+    "cls": "法師",
+    "slot": "",
+    "traits": [
+      "法術",
+      "火"
+    ],
+    "text": "[先_怒10]：對方直擊4，然後我方收招，並跳過我方下個回合的抽牌階段。",
+    "positive_prompt": "a cataclysmic apocalyptic explosion of crimson flame and black smoke billowing upward in a towering mushroom cloud, ground vaporized into molten magma, blinding white center flash, shockwave flattening ancient pillars, overwhelming scale, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Dynamic combat action framing, intense martial motion, powerful strike impact, cinematic wide shot",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "A58.avif"
+  },
+  {
+    "id": "A59",
+    "name": "公開資訊",
+    "kind": "move",
+    "cls": "商人",
+    "slot": "",
+    "traits": [
+      "市場"
+    ],
+    "text": "[經]：當此卡被蓋為裏側時，翻開最多 3 張我方裏側經驗，然後捨棄此卡。",
+    "positive_prompt": "a grand illuminated ledger displaying fluctuating market charts and trading scrolls laid out under scrutiny, magnifying glass over fine handwritten ledgers, abacus beads arranged, bright clear daylight streaming through window, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Dynamic combat action framing, intense martial motion, powerful strike impact, cinematic wide shot",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "A59.avif"
+  },
+  {
+    "id": "A60",
+    "name": "狙擊蓄力",
+    "kind": "move",
+    "cls": "弓箭手",
+    "slot": "",
+    "traits": [
+      "變化"
+    ],
+    "text": "[發_蓋4]：抽2，再選擇 1 張手牌放到牌組頂。",
+    "positive_prompt": "a sniper bow drawn to absolute maximum tension with swirling spiral wind condensing around the arrow tip, groaning wooden bow limbs, taut trembling bowstring, hyper-concentrated eye visible under hood, suspended dust particles, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Dynamic combat action framing, intense martial motion, powerful strike impact, cinematic wide shot",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "A60.avif"
+  },
+  {
+    "id": "A61",
+    "name": "熔岩之擊",
+    "kind": "move",
+    "cls": "劍士",
+    "slot": "",
+    "traits": [
+      "攻擊",
+      "火"
+    ],
+    "text": "[發_怒3]：對方直擊1。",
+    "positive_prompt": "a heavy greatsword superheated into glowing molten lava crashing into the ground with splashing magma, molten rock sprays, glowing fissure cracking open on earth, intense heat haze, radiant orange light reflecting off armor, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Dynamic combat action framing, intense martial motion, powerful strike impact, cinematic wide shot",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "A61.avif"
+  },
+  {
+    "id": "A63",
+    "name": "財富管理",
+    "kind": "move",
+    "cls": "商人",
+    "slot": "",
+    "traits": [
+      "市場"
+    ],
+    "text": "[發_蓋1]：必須將牌組上方 3 張卡以裏側放入經驗區。\n[經]：當此卡被蓋為裏側時，必須選擇 2 張經驗放回牌組底。",
+    "positive_prompt": "a massive reinforced steel vault door opening to reveal towering stacks of golden coins and jeweled chests, heavy intricate clockwork lock gears, glittering golden reflection flooding the room, meticulous organized treasure, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Dynamic combat action framing, intense martial motion, powerful strike impact, cinematic wide shot",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "A63.avif"
+  },
+  {
+    "id": "A64",
+    "name": "嘲諷",
+    "kind": "move",
+    "cls": "劍士",
+    "slot": "",
+    "traits": [
+      "變化"
+    ],
+    "text": "此卡只能在先手步驟出招，出招時必須支付 [蓋2]。\n[先]：當對方收招時，且對方戰鬥區沒有招式，我方可以繼續出招，不直接進入傷害計算。\n當傷害計算時，我方 +0−4X。X＝我方招式卡疊的卡數。",
+    "positive_prompt": "an armored warrior banging a sword against a dented shield with a mocking wide grin provoking all nearby enemies, clanging metal soundwaves, arrogant tilted chin, enemy shadows turning aggressively toward him, battle frenzy, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Dynamic combat action framing, intense martial motion, powerful strike impact, cinematic wide shot",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "A64.avif"
+  },
+  {
+    "id": "A65",
+    "name": "生命偷取",
+    "kind": "move",
+    "cls": "弓箭手",
+    "slot": "",
+    "traits": [
+      "攻擊",
+      "回復"
+    ],
+    "text": "[頂]：當我方追擊判定成功時，回復 2。",
+    "positive_prompt": "a barbed enchanted arrow extracting swirling crimson life essence from a target, siphoning back to the archer, glowing scarlet energy strands weaving into the bow, rejuvenating soft glow around wounds, dynamic vampire archer feel, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Dynamic combat action framing, intense martial motion, powerful strike impact, cinematic wide shot",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "A65.avif"
+  },
+  {
+    "id": "A68",
+    "name": "生命藥水",
+    "kind": "move",
+    "cls": "共用",
+    "slot": "",
+    "traits": [
+      "藥水",
+      "回復"
+    ],
+    "text": "[發_蓋3]：回復 3。",
+    "positive_prompt": "an ornate glass potion flask glowing with radiant effervescent crimson liquid with floating sparkling bubbles, golden filigree stopper, translucent glass facets catching ambient light, soothing restorative aura radiating around it, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Dynamic combat action framing, intense martial motion, powerful strike impact, cinematic wide shot",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "A68.avif"
+  },
+  {
+    "id": "A69",
+    "name": "職業專精書",
+    "kind": "move",
+    "cls": "共用",
+    "slot": "",
+    "traits": [
+      "變化"
+    ],
+    "text": "[發_蓋1]：看牌組上方 5 張卡，選擇其中 1 張職業卡加入手牌，其餘隨機放到牌組底。",
+    "positive_prompt": "an opened masterwork tome with golden gilded pages displaying glowing diagrams of combat mastery, floating holographic battle martial stances hovering above open book, leather bookmark, wisdom and enlightenment theme, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Dynamic combat action framing, intense martial motion, powerful strike impact, cinematic wide shot",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "A69.avif"
+  },
+  {
+    "id": "A70",
+    "name": "洩憤",
+    "kind": "move",
+    "cls": "劍士",
+    "slot": "",
+    "traits": [
+      "變化"
+    ],
+    "text": "[發_蓋3]：將怒氣區上方 2 張卡捨棄，然後其中的職業卡加入手牌。",
+    "positive_prompt": "an enraged fighter in a reckless berserker frenzy hacking downward with unbridled brute fury, shattered weapon fragments flying, explosive ground impact, ferocious grimace, wild kinetic muscle tension, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Dynamic combat action framing, intense martial motion, powerful strike impact, cinematic wide shot",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "A70.avif"
+  },
+  {
+    "id": "A71",
+    "name": "整理魔導書",
+    "kind": "move",
+    "cls": "法師",
+    "slot": "",
+    "traits": [
+      "變化"
+    ],
+    "text": "[頂]：當歸還時，抽X。X＝我方戰鬥區白板卡的張數。",
+    "positive_prompt": "magical spell scrolls and levitating parchment pages systematically organizing themselves into an arcane grimoire, glowing glyphs aligning in mid-air, floating feather quill inking lines, soft studious candlelight, serene arcane study, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Dynamic combat action framing, intense martial motion, powerful strike impact, cinematic wide shot",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "A71.avif"
+  },
+  {
+    "id": "A72",
+    "name": "狩獵印記",
+    "kind": "move",
+    "cls": "盜賊",
+    "slot": "",
+    "traits": [
+      "印記"
+    ],
+    "text": "[先]：當對方收招時，抽X。X＝3 − 對方戰鬥區的招式張數，最低為 0。",
+    "positive_prompt": "a sinister glowing bloodhound skull brand magically imprinted on a fleeing prey's shoulder, smoldering crimson mark, smoke wafting from brand, predator's silhouette watching closely from tree canopy, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Dynamic combat action framing, intense martial motion, powerful strike impact, cinematic wide shot",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "A72.avif"
+  },
+  {
+    "id": "A73",
+    "name": "追跡箭矢",
+    "kind": "move",
+    "cls": "弓箭手",
+    "slot": "",
+    "traits": [
+      "攻擊"
+    ],
+    "text": "此卡追擊判定必定成功。\n[發_蓋2]：抽1。\n[追]：抽1。",
+    "positive_prompt": "a self-guiding enchanted arrow curving gracefully in mid-flight following an erratic target's trail, spiraling cyan wind trail tracing its curved trajectory, arrow tip glowing with hunting runes, extreme agility, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Dynamic combat action framing, intense martial motion, powerful strike impact, cinematic wide shot",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "A73.avif"
+  },
+  {
+    "id": "C1",
+    "name": "勇者",
+    "kind": "character",
+    "cls": "劍士",
+    "slot": "",
+    "traits": [
+      "角色"
+    ],
+    "text": "總和攻擊15以上時，攻擊+3",
+    "positive_prompt": "a determined young warrior with piercing eyes holding an ancient iron broadsword with battle scars, rugged steel chestplate with gold engravings, resolute battle-ready expression, windblown crimson cape, dramatic rim lighting, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Upper-body heroic character portrait, expressive combat-ready stance, atmospheric depth, focused gaze",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "C1.avif"
+  },
+  {
+    "id": "C2",
+    "name": "刺客",
+    "kind": "character",
+    "cls": "盜賊",
+    "slot": "",
+    "traits": [
+      "角色"
+    ],
+    "text": "判定成功時，攻擊+2",
+    "positive_prompt": "a lethal assassin cloaked in midnight-black hood with glowing amber eyes partially concealed by shadows, holding twin poisoned daggers reflecting moonlight, leather harness with vials, ethereal shadow mist drifting from cloak, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Upper-body heroic character portrait, expressive combat-ready stance, atmospheric depth, focused gaze",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "C2.avif"
+  },
+  {
+    "id": "C3",
+    "name": "商人",
+    "kind": "character",
+    "cls": "商人",
+    "slot": "",
+    "traits": [
+      "角色"
+    ],
+    "text": "抽牌時看牌組上方2張牌選1張加手牌，另一張放回底部",
+    "positive_prompt": "a shrewd, charismatic merchant in ornate embroidered velvet robes inspecting an antique golden coin, luxurious fur collar, ornate brass weighing scale and leather coin pouches hanging from belt, subtle cunning smile, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Upper-body heroic character portrait, expressive combat-ready stance, atmospheric depth, focused gaze",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "C3.avif"
+  },
+  {
+    "id": "C4",
+    "name": "遊俠",
+    "kind": "character",
+    "cls": "弓箭手",
+    "slot": "",
+    "traits": [
+      "角色"
+    ],
+    "text": "獲得【瞄準】。",
+    "positive_prompt": "a sharp-eyed elven ranger in forest-green leather tunic drawing a mastercrafted recurve composite bow, focused predatory gaze, quiver overflowing with fletched arrows, oak leaves rustling around shoulders in the forest wind, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Upper-body heroic character portrait, expressive combat-ready stance, atmospheric depth, focused gaze",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "C4.avif"
+  },
+  {
+    "id": "C5",
+    "name": "法師",
+    "kind": "character",
+    "cls": "法師",
+    "slot": "",
+    "traits": [
+      "角色"
+    ],
+    "text": "起始手牌額外抽3張。",
+    "positive_prompt": "a wise arcane scholar with glowing mystical tattoos hovering an ancient levitating spellbook illuminated by azure light, flowing deep sapphire robes with embroidered runes, swirling arcane sparks dancing on fingertips, intense concentrated aura, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Upper-body heroic character portrait, expressive combat-ready stance, atmospheric depth, focused gaze",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "C5.avif"
+  },
+  {
+    "id": "C6",
+    "name": "先人",
+    "kind": "character",
+    "cls": "盜賊",
+    "slot": "",
+    "traits": [
+      "角色"
+    ],
+    "text": "先攻的回合中，我方攻擊+X。X=我方出招張數-1。",
+    "positive_prompt": "a veteran rogue wanderer leaning against a stone ruin, flipping an ornate throwing knife with effortless mastery, weathered trench coat, bandaged hands, sly confident smirk, autumn leaves swirling around boots, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Upper-body heroic character portrait, expressive combat-ready stance, atmospheric depth, focused gaze",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "C6.avif"
+  },
+  {
+    "id": "C7",
+    "name": "後人",
+    "kind": "character",
+    "cls": "劍士",
+    "slot": "",
+    "traits": [
+      "角色"
+    ],
+    "text": "後攻的回合中，我方總防禦值+2。",
+    "positive_prompt": "a vigilant stoic guardian knight planted firmly with a massive heavy shield bearing an embossed lion crest, polished knightly full plate armor with minor dents, unwavering defensive stance, ground cracked under sturdy greaves, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Upper-body heroic character portrait, expressive combat-ready stance, atmospheric depth, focused gaze",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "C7.avif"
+  },
+  {
+    "id": "E1",
+    "name": "幸運兔腳",
+    "kind": "equip",
+    "cls": "盜賊",
+    "slot": "飾品",
+    "traits": [],
+    "text": "(回合1次)[蓋2]：當我方追擊判定失敗時，額外翻 1 張卡做追擊判定。",
+    "positive_prompt": "a mystical preserved rabbit foot amulet bound with worn dark leather cords and bronze beads, soft weathered fur, faint glimmering golden fairy dust hovering around it, resting on an old dark oak tavern table, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Ground-level still life angle, focused artifact composition, pristine weapon and item close-up, dramatic lighting",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "E1.avif"
+  },
+  {
+    "id": "E2",
+    "name": "家族相片",
+    "kind": "equip",
+    "cls": "劍士",
+    "slot": "飾品",
+    "traits": [],
+    "text": "[蓋1_怒2]：當回合開始時，回復1。",
+    "positive_prompt": "a cherished vintage miniature family portrait in a tarnished silver locket with cracked glass, faded sepia tones showing a warm embrace, dried pressed flower petal beside it, resting on a soldier's scarred armor plate, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Ground-level still life angle, focused artifact composition, pristine weapon and item close-up, dramatic lighting",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "E2.avif"
+  },
+  {
+    "id": "E3",
+    "name": "瞄準器",
+    "kind": "equip",
+    "cls": "弓箭手",
+    "slot": "飾品",
+    "traits": [],
+    "text": "獲得【瞄準】。",
+    "positive_prompt": "an intricate brass optical aiming scope with precision glass lenses and finely engraved crosshairs, mounted on polished dark walnut wood, delicate brass gear wheels, gleaming reflections of dawn light through lens, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Ground-level still life angle, focused artifact composition, pristine weapon and item close-up, dramatic lighting",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "E3.avif"
+  },
+  {
+    "id": "E4",
+    "name": "招財貓",
+    "kind": "equip",
+    "cls": "商人",
+    "slot": "飾品",
+    "traits": [],
+    "text": "[蓋2]：當爆發時，抽1。",
+    "positive_prompt": "a vintage carved porcelain beckoning cat statue holding a shiny large ancient golden ingot, hand-painted red and black collar with a brass bell, delicate hairline cracks on glazed porcelain, surrounded by copper coins, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Ground-level still life angle, focused artifact composition, pristine weapon and item close-up, dramatic lighting",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "E4.avif"
+  },
+  {
+    "id": "E5",
+    "name": "冰與雷之曲",
+    "kind": "equip",
+    "cls": "法師",
+    "slot": "飾品",
+    "traits": [],
+    "text": "[蓋2]：當我方收招時，且我方戰鬥區的卡共有特徵「冰」「電」，抽1，回復1。",
+    "positive_prompt": "a magnificent twin-gemstone pendant intertwining a frosty crystal sapphire and a crackling violet thunder stone, intertwined silver filigree setting, tiny sparks of lightning arcing over frost crystals, resting on dark silk, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Ground-level still life angle, focused artifact composition, pristine weapon and item close-up, dramatic lighting",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "E5.avif"
+  },
+  {
+    "id": "E6",
+    "name": "元素法典",
+    "kind": "equip",
+    "cls": "法師",
+    "slot": "飾品",
+    "traits": [],
+    "text": "[蓋3]：當我方收招時，且我方戰鬥區有【元素】特徵時，從表側經驗選擇 1 張有相同【元素】特徵的卡加入手牌。",
+    "positive_prompt": "a thick leather-bound ancient elemental grimoire locked with bronze clasps, pulsing with multicolored magical veins, embossed elemental symbols of fire, frost and storm on worn leather cover, faint glowing vapor seeping from parchment edges, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Ground-level still life angle, focused artifact composition, pristine weapon and item close-up, dramatic lighting",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "E6.avif"
+  },
+  {
+    "id": "E7",
+    "name": "布甲",
+    "kind": "equip",
+    "cls": "共用",
+    "slot": "防具",
+    "traits": [],
+    "text": "[蓋1]：當我方收招時，+0+1。",
+    "positive_prompt": "a reinforced traveler's padded cloth armor vest folded neatly on a wooden armory bench, heavy stitched layered linen, hardened leather shoulder patches, steel buckles with minor scuffs, sturdy practical craftsmanship, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Ground-level still life angle, focused artifact composition, pristine weapon and item close-up, dramatic lighting",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "E7.avif"
+  },
+  {
+    "id": "E8",
+    "name": "木棍",
+    "kind": "equip",
+    "cls": "共用",
+    "slot": "武器",
+    "traits": [],
+    "text": "[蓋1]：當我方收招時，+1+0。",
+    "positive_prompt": "a heavy solid hardwood quarterstaff polished smooth by years of rigorous martial arts training, spiral leather-wrapped grip, iron caps at both ends with scratched surfaces, resting upright against a mossy stone wall, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Ground-level still life angle, focused artifact composition, pristine weapon and item close-up, dramatic lighting",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "E8.avif"
+  },
+  {
+    "id": "X1",
+    "name": "Ex-中毒",
+    "kind": "ex",
+    "cls": "共用",
+    "slot": "",
+    "traits": [
+      "減益",
+      "毒"
+    ],
+    "text": "[經]：當回合開始時，直擊我方1。\n當此卡離開經驗區時，移除遊戲。",
+    "positive_prompt": "a cracked clay vial tipped over, spilling thick bubbling emerald venom that violently hisses on the cold floor, noxious green mist rising in tendrils, dissolving stone texture, sinister toxic bubbles, dark grim atmosphere, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Visceral affliction close-up, ominous dark aura swirling, haunting symbolic framing, intense mood",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "X1.avif"
+  },
+  {
+    "id": "X2",
+    "name": "Ex-流血",
+    "kind": "ex",
+    "cls": "共用",
+    "slot": "",
+    "traits": [
+      "減益"
+    ],
+    "text": "[經]：我方 +0−1。\n當此卡離開經驗區時，移除遊戲。",
+    "positive_prompt": "a jagged cruel barbed blade dripping fresh crimson blood onto cold weathered cobblestones, splatters of dark crimson droplets frozen mid-air, harsh edge highlights on stained steel, tense ominous presence, Classical academic oil painting, realistic fine art, thick impasto brushwork, visible textured strokes, painterly canvas texture, Dramatic chiaroscuro lighting, subtle soft glow reflecting off weapon edges and spell energy, Muted, earthy and weathered color palette with rich deep shadows and desaturated atmospheric tones, Atmospheric dust motes, drifting ash or wind currents, gritty textured environment, Visceral affliction close-up, ominous dark aura swirling, haunting symbolic framing, intense mood",
+    "negative_prompt": "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs",
+    "target_output": "X2.avif"
+  }
+]

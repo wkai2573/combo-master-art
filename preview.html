@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combo Master Art - 卡牌圖鑑預覽</title>
+  <style>
+    :root {
+      --bg: #121418;
+      --card-bg: #1e222b;
+      --border: #333a47;
+      --accent: #d4a373;
+      --text: #e6edf3;
+      --text-muted: #8b949e;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 24px;
+    }
+    header {
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    h1 {
+      margin: 0 0 8px 0;
+      color: var(--accent);
+      font-size: 24px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 3px 8px;
+      background: #2a313d;
+      border-radius: 4px;
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-right: 8px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 20px;
+    }
+    .card-item {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .card-title {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .card-id {
+      color: var(--accent);
+      font-family: monospace;
+      font-size: 13px;
+    }
+    .preview-box {
+      background: #0d1117;
+      border: 1px dashed var(--border);
+      border-radius: 6px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+    .card-img-preview {
+      width: 200px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 4px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    .img-label {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+    .prompt-box {
+      background: #161b22;
+      border-radius: 4px;
+      padding: 10px;
+      font-size: 11px;
+      color: var(--text-muted);
+      line-height: 1.4;
+      max-height: 80px;
+      overflow-y: auto;
+    }
+    .no-img {
+      width: 200px;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #181d24;
+      color: var(--text-muted);
+      font-size: 12px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Combo Master Art - 卡牌圖鑑預覽</h1>
+    <span class="badge">目標規格: 200 x 120 (.avif)</span>
+    <span class="badge">已註冊卡片: 51 張</span>
+  </header>
+  <div class="grid">
+    
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">魅影射擊</span>
+            <span class="card-id">A37 (弓箭手 · move · 攻擊)</span>
+          </div>
+          <div class="preview-box">
+            <img class="card-img-preview" src="dist/A37.avif" alt="A37">
+            <span class="img-label">成品: dist/A37.avif</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> an ethereal archer in motion releasing a phantom translucent arrow that splits into spectral duplicates
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">地雷陷阱</span>
+            <span class="card-id">A38 (弓箭手 · move · 陷阱)</span>
+          </div>
+          <div class="preview-box">
+            <img class="card-img-preview" src="dist/A38.avif" alt="A38">
+            <span class="img-label">成品: dist/A38.avif</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> a concealed mechanical pressure mine suddenly detonating with fire and shrapnel hidden beneath dry leaves
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">戒備打擊</span>
+            <span class="card-id">A39 (劍士 · move · 攻擊)</span>
+          </div>
+          <div class="preview-box">
+            <img class="card-img-preview" src="dist/A39.avif" alt="A39">
+            <span class="img-label">成品: dist/A39.avif</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> a disciplined warrior thrusting a short sword forward while maintaining a rock-solid guard behind a buckler
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">復仇之嚎</span>
+            <span class="card-id">A40 (劍士 · move · 變化)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> a battle-scarred barbarian roaring in fury with veins pulsing and a fierce crimson vengeful aura bursting outward
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">力量爆破</span>
+            <span class="card-id">A41 (法師 · move · 法術)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> a raw concussive magical blast erupting from a spellcaster's palms, shattering the immediate terrain
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">電弧</span>
+            <span class="card-id">A42 (法師 · move · 法術 · 電)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> a ferocious branching lightning arc leaping across the battlefield between metallic targets
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">伏擊</span>
+            <span class="card-id">A43 (盜賊 · move · 攻擊)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> a shadowy figure lunging from darkness with a swift lethal downward dagger strike
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">二刀連擊</span>
+            <span class="card-id">A44 (盜賊 · move · 攻擊)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> an agile dual-wielding fighter executing a rapid cross-slash combo with curved sabers
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">低價買進</span>
+            <span class="card-id">A45 (商人 · move · 市場 · 回復)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> a clever trader scooping up rare gemstones and gold coins spilled across a velvet counter at a bargain
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">高價賣出</span>
+            <span class="card-id">A46 (商人 · move · 市場)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> an opulent auctioneer slamming a golden gavel down triumphantly amidst flying contracts and currency
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">狙擊印記</span>
+            <span class="card-id">A47 (弓箭手 · move · 印記)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> a glowing red runic reticle magically locking onto a distant adversary's vital spot through heavy fog
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">順手牽羊</span>
+            <span class="card-id">A48 (盜賊 · move · 變化)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> a pickpocket's nimble hand skillfully lifting a heavy leather coin purse from an unsuspecting belt mid-crowd
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">交涉</span>
+            <span class="card-id">A49 (商人 · move · 變化)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> two silhouettes in shadowy candlelit parlor leaning over an official wax-sealed diplomatic treaty
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">冰霜護甲</span>
+            <span class="card-id">A50 (法師 · move · 法術 · 冰)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> crystalline thick ice armor instantly freezing around a mage's torso and limbs, deflecting incoming blows
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">盾擊</span>
+            <span class="card-id">A51 (劍士 · move · 攻擊)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> a heavy armored warrior violently slamming the rim of an iron tower shield directly into the foe's guard
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">即時停損</span>
+            <span class="card-id">A52 (商人 · move · 市場)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> a decisive trader severing an entangled rope bridge with a single swift cut to preserve the caravan
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">二連矢</span>
+            <span class="card-id">A53 (弓箭手 · move · 攻擊)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> two razor-tipped arrows flying in tight tandem through the air, trailing dual spiraling wind vortices
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">凡骨的意志</span>
+            <span class="card-id">A54 (劍士 · move · 變化)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> a battered common militia soldier standing defiantly with a simple chipped sword against overwhelming darkness
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">卸除鎧甲</span>
+            <span class="card-id">A55 (盜賊 · move · 變化)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> a razor-sharp curved parrying dagger twisting and snapping the leather straps of heavy plate armor
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">火球</span>
+            <span class="card-id">A56 (法師 · move · 法術 · 火)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> a colossal swirling fiery sphere of molten plasma hurling forward leaving a scorched blazing trail
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">塗毒</span>
+            <span class="card-id">A57 (盜賊 · move · 變化 · 毒)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> a rogue carefully dripping thick viscous emerald poison along the jagged serrated groove of a curved stiletto
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">Explosion!</span>
+            <span class="card-id">A58 (法師 · move · 法術 · 火)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> a cataclysmic apocalyptic explosion of crimson flame and black smoke billowing upward in a towering mushroom cloud
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">公開資訊</span>
+            <span class="card-id">A59 (商人 · move · 市場)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> a grand illuminated ledger displaying fluctuating market charts and trading scrolls laid out under scrutiny
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">狙擊蓄力</span>
+            <span class="card-id">A60 (弓箭手 · move · 變化)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> a sniper bow drawn to absolute maximum tension with swirling spiral wind condensing around the arrow tip
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">熔岩之擊</span>
+            <span class="card-id">A61 (劍士 · move · 攻擊 · 火)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> a heavy greatsword superheated into glowing molten lava crashing into the ground with splashing magma
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">財富管理</span>
+            <span class="card-id">A63 (商人 · move · 市場)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> a massive reinforced steel vault door opening to reveal towering stacks of golden coins and jeweled chests
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">嘲諷</span>
+            <span class="card-id">A64 (劍士 · move · 變化)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> an armored warrior banging a sword against a dented shield with a mocking wide grin provoking all nearby enemies
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">生命偷取</span>
+            <span class="card-id">A65 (弓箭手 · move · 攻擊 · 回復)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> a barbed enchanted arrow extracting swirling crimson life essence from a target, siphoning back to the archer
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">生命藥水</span>
+            <span class="card-id">A68 (共用 · move · 藥水 · 回復)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> an ornate glass potion flask glowing with radiant effervescent crimson liquid with floating sparkling bubbles
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">職業專精書</span>
+            <span class="card-id">A69 (共用 · move · 變化)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> an opened masterwork tome with golden gilded pages displaying glowing diagrams of combat mastery
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">洩憤</span>
+            <span class="card-id">A70 (劍士 · move · 變化)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> an enraged fighter in a reckless berserker frenzy hacking downward with unbridled brute fury
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">整理魔導書</span>
+            <span class="card-id">A71 (法師 · move · 變化)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> magical spell scrolls and levitating parchment pages systematically organizing themselves into an arcane grimoire
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">狩獵印記</span>
+            <span class="card-id">A72 (盜賊 · move · 印記)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> a sinister glowing bloodhound skull brand magically imprinted on a fleeing prey's shoulder
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">追跡箭矢</span>
+            <span class="card-id">A73 (弓箭手 · move · 攻擊)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> a self-guiding enchanted arrow curving gracefully in mid-flight following an erratic target's trail
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">勇者</span>
+            <span class="card-id">C1 (劍士 · character · 角色)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> a determined young warrior with piercing eyes holding an ancient iron broadsword with battle scars
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">刺客</span>
+            <span class="card-id">C2 (盜賊 · character · 角色)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> a lethal assassin cloaked in midnight-black hood with glowing amber eyes partially concealed by shadows
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">商人</span>
+            <span class="card-id">C3 (商人 · character · 角色)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> a shrewd, charismatic merchant in ornate embroidered velvet robes inspecting an antique golden coin
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">遊俠</span>
+            <span class="card-id">C4 (弓箭手 · character · 角色)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> a sharp-eyed elven ranger in forest-green leather tunic drawing a mastercrafted recurve composite bow
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">法師</span>
+            <span class="card-id">C5 (法師 · character · 角色)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> a wise arcane scholar with glowing mystical tattoos hovering an ancient levitating spellbook illuminated by azure light
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">先人</span>
+            <span class="card-id">C6 (盜賊 · character · 角色)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> a veteran rogue wanderer leaning against a stone ruin, flipping an ornate throwing knife with effortless mastery
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">後人</span>
+            <span class="card-id">C7 (劍士 · character · 角色)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> a vigilant stoic guardian knight planted firmly with a massive heavy shield bearing an embossed lion crest
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">幸運兔腳</span>
+            <span class="card-id">E1 (盜賊 · equip · 飾品)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> a mystical preserved rabbit foot amulet bound with worn dark leather cords and bronze beads
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">家族相片</span>
+            <span class="card-id">E2 (劍士 · equip · 飾品)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> a cherished vintage miniature family portrait in a tarnished silver locket with cracked glass
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">瞄準器</span>
+            <span class="card-id">E3 (弓箭手 · equip · 飾品)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> an intricate brass optical aiming scope with precision glass lenses and finely engraved crosshairs
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">招財貓</span>
+            <span class="card-id">E4 (商人 · equip · 飾品)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> a vintage carved porcelain beckoning cat statue holding a shiny large ancient golden ingot
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">冰與雷之曲</span>
+            <span class="card-id">E5 (法師 · equip · 飾品)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> a magnificent twin-gemstone pendant intertwining a frosty crystal sapphire and a crackling violet thunder stone
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">元素法典</span>
+            <span class="card-id">E6 (法師 · equip · 飾品)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> a thick leather-bound ancient elemental grimoire locked with bronze clasps, pulsing with multicolored magical veins
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">布甲</span>
+            <span class="card-id">E7 (共用 · equip · 防具)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> a reinforced traveler's padded cloth armor vest folded neatly on a wooden armory bench
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">木棍</span>
+            <span class="card-id">E8 (共用 · equip · 武器)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> a heavy solid hardwood quarterstaff polished smooth by years of rigorous martial arts training
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">Ex-中毒</span>
+            <span class="card-id">X1 (共用 · ex · 減益 · 毒)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> a cracked clay vial tipped over, spilling thick bubbling emerald venom that violently hisses on the cold floor
+          </div>
+        </div>
+        
+
+        <div class="card-item">
+          <div class="card-header">
+            <span class="card-title">Ex-流血</span>
+            <span class="card-id">X2 (共用 · ex · 減益)</span>
+          </div>
+          <div class="preview-box">
+            <div class="no-img">尚無圖檔</div>
+            <span class="img-label">等待生成</span>
+          </div>
+          <div class="prompt-box">
+            <strong>主體描述:</strong> a jagged cruel barbed blade dripping fresh crimson blood onto cold weathered cobblestones
+          </div>
+        </div>
+        
+  </div>
+</body>
+</html>

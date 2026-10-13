@@ -1,0 +1,532 @@
+# ==========================================
+# 連擊大師 卡片生圖資料庫 (Card Database)
+# 
+# 欄位說明：
+# - id: 永久編號 UID (A:招式, E:裝備, C:角色, X:Ex狀態卡)
+# - name: 遊戲內中文名稱
+# - kind: 卡片類型 (move | equip | character | ex)
+# - cls: 職業 (劍士 | 盜賊 | 商人 | 弓箭手 | 法師 | 共用)
+# - slot: 裝備部位 (僅 equip 有：武器 | 防具 | 飾品)
+# - traits: 特徵標籤清單
+# - text: 遊戲效果原文 (參考脈絡)
+# - subject: AI 生圖核心主體描述 (英文)
+# - details: 細節、特徵、光影與環境描述 (英文)
+# ==========================================
+
+[[cards]]
+id = "A37"
+name = "魅影射擊"
+kind = "move"
+cls = "弓箭手"
+traits = ["攻擊"]
+text = "[追]：我方 +0+4。"
+subject = "an ethereal archer in motion releasing a phantom translucent arrow that splits into spectral duplicates"
+details = "ghostly cyan glow, blurred motion trail, dynamic archery release pose, dark misty forest atmosphere"
+
+[[cards]]
+id = "A38"
+name = "地雷陷阱"
+kind = "move"
+cls = "弓箭手"
+traits = ["陷阱"]
+text = "[追]：我方 +3+0。"
+subject = "a concealed mechanical pressure mine suddenly detonating with fire and shrapnel hidden beneath dry leaves"
+details = "flying soil and fiery spark bursts, tripwire snapping, explosive shockwave radiating outward, tense ambush visual"
+
+[[cards]]
+id = "A39"
+name = "戒備打擊"
+kind = "move"
+cls = "劍士"
+traits = ["攻擊"]
+text = "[頂]：我方 +1+2。"
+subject = "a disciplined warrior thrusting a short sword forward while maintaining a rock-solid guard behind a buckler"
+details = "sparks flying from steel collision, rigid poised footwork, controlled kinetic force, focused determined eyes"
+
+[[cards]]
+id = "A40"
+name = "復仇之嚎"
+kind = "move"
+cls = "劍士"
+traits = ["變化"]
+text = "[經_怒3]：當傷害計算時，且對方給予的傷害 > 我方給予的傷害，將怒氣區上方 1 張卡加入手牌。"
+subject = "a battle-scarred barbarian roaring in fury with veins pulsing and a fierce crimson vengeful aura bursting outward"
+details = "bared teeth in savage battle cry, sonic shockwave rippling the air, flying gravel, dramatic backlit rim lighting"
+
+[[cards]]
+id = "A41"
+name = "力量爆破"
+kind = "move"
+cls = "法師"
+traits = ["法術"]
+text = "[頂]：我方 −3+0。\n[追]：此卡追擊判定失敗。"
+subject = "a raw concussive magical blast erupting from a spellcaster's palms, shattering the immediate terrain"
+details = "chaotic glowing energy tendrils, explosive shockwave ring, flying stone fragments, blinding white-blue core"
+
+[[cards]]
+id = "A42"
+name = "電弧"
+kind = "move"
+cls = "法師"
+traits = ["法術", "電"]
+text = "[發_蓋1]：抽X，再將 X 張手牌放到牌組底。X＝對方戰鬥區的招式數量。"
+subject = "a ferocious branching lightning arc leaping across the battlefield between metallic targets"
+details = "brilliant electric violet discharge, scorched ground, crackling ozone sparks, high contrast dynamic lighting"
+
+[[cards]]
+id = "A43"
+name = "伏擊"
+kind = "move"
+cls = "盜賊"
+traits = ["攻擊"]
+text = "[先]：此回合我方 +4+0。"
+subject = "a shadowy figure lunging from darkness with a swift lethal downward dagger strike"
+details = "motion blur streaks, moonlight catching the razor-sharp edge, cloak billowing in sudden violent motion"
+
+[[cards]]
+id = "A44"
+name = "二刀連擊"
+kind = "move"
+cls = "盜賊"
+traits = ["攻擊"]
+text = "[頂]：追擊+1。"
+subject = "an agile dual-wielding fighter executing a rapid cross-slash combo with curved sabers"
+details = "twin glowing weapon trails crossing in an X shape, sliced fabric in the air, low stance dynamic kinetic momentum"
+
+[[cards]]
+id = "A45"
+name = "低價買進"
+kind = "move"
+cls = "商人"
+traits = ["市場", "回復"]
+text = "[經]：當此卡被蓋為裏側時，回復1。"
+subject = "a clever trader scooping up rare gemstones and gold coins spilled across a velvet counter at a bargain"
+details = "glinting gold reflection in eyes, hand raking in treasure, satisfied grin, warm lantern light"
+
+[[cards]]
+id = "A46"
+name = "高價賣出"
+kind = "move"
+cls = "商人"
+traits = ["市場"]
+text = "[經]：當此卡被蓋為裏側時，抽1。"
+subject = "an opulent auctioneer slamming a golden gavel down triumphantly amidst flying contracts and currency"
+details = "dramatic auction podium, shining piles of gold bullion, celebratory energetic gesture, rich deep mahogany background"
+
+[[cards]]
+id = "A47"
+name = "狙擊印記"
+kind = "move"
+cls = "弓箭手"
+traits = ["印記"]
+text = "[先]：此回合我方的瞄準升級1。"
+subject = "a glowing red runic reticle magically locking onto a distant adversary's vital spot through heavy fog"
+details = "focused crosshair luminescence, faint heartbeat ripple effect, crisp distant target silhouette, extreme focus"
+
+[[cards]]
+id = "A48"
+name = "順手牽羊"
+kind = "move"
+cls = "盜賊"
+traits = ["變化"]
+text = "[發_蓋X]：抽X，此回合我方 +0−X。X最大為2。"
+subject = "a pickpocket's nimble hand skillfully lifting a heavy leather coin purse from an unsuspecting belt mid-crowd"
+details = "swift stealthy finger movement, loosened knot, bustling tavern crowd in soft background blur, tense heist moment"
+
+[[cards]]
+id = "A49"
+name = "交涉"
+kind = "move"
+cls = "商人"
+traits = ["變化"]
+text = "[發_蓋X]：抽X，再將 X 張手牌放到牌組底。X最大為3。"
+subject = "two silhouettes in shadowy candlelit parlor leaning over an official wax-sealed diplomatic treaty"
+details = "quill pen hovering over parchment, calculating intense expressions, smoke curling from smoking pipe, intense negotiation"
+
+[[cards]]
+id = "A50"
+name = "冰霜護甲"
+kind = "move"
+cls = "法師"
+traits = ["法術", "冰"]
+text = "[頂_蓋2]：當傷害計算時，捨棄我方 X 張裏側經驗，減少受到的 X 點傷害。X 最大為將受到的傷害。"
+subject = "crystalline thick ice armor instantly freezing around a mage's torso and limbs, deflecting incoming blows"
+details = "fractured frost crystals, chilling blue mist cascading down, incoming weapon bouncing off impenetrable icy barrier"
+
+[[cards]]
+id = "A51"
+name = "盾擊"
+kind = "move"
+cls = "劍士"
+traits = ["攻擊"]
+text = "[頂]：若我方戰鬥區的招式卡的原始攻擊力小於原始防禦力，則該卡的攻擊力改為原始防禦力。"
+subject = "a heavy armored warrior violently slamming the rim of an iron tower shield directly into the foe's guard"
+details = "massive kinetic impact shockwave, crushing force sparks, flying spit and sweat, heavy braced posture"
+
+[[cards]]
+id = "A52"
+name = "即時停損"
+kind = "move"
+cls = "商人"
+traits = ["市場"]
+text = "[發_蓋4]：當此卡打出後，雙方立即收招。"
+subject = "a decisive trader severing an entangled rope bridge with a single swift cut to preserve the caravan"
+details = "snapping hemp ropes under tension, clean slice with a machete, calm calculated stare amidst chaotic backdrop"
+
+[[cards]]
+id = "A53"
+name = "二連矢"
+kind = "move"
+cls = "弓箭手"
+traits = ["攻擊"]
+text = "[追]：追擊+1。"
+subject = "two razor-tipped arrows flying in tight tandem through the air, trailing dual spiraling wind vortices"
+details = "wind tunnel wake, feathers trembling in high velocity flight, glistening steel arrowheads aiming ahead"
+
+[[cards]]
+id = "A54"
+name = "凡骨的意志"
+kind = "move"
+cls = "劍士"
+traits = ["變化"]
+text = "[經]：我方 +X+X。X＝我方戰鬥區白板卡的數量。\n[經]：當回合開始時，必須蓋前 2 張表側經驗。"
+subject = "a battered common militia soldier standing defiantly with a simple chipped sword against overwhelming darkness"
+details = "bloodied bandages, unwavering fiery spirit in eyes, golden courage aura shining through ragged peasant clothing"
+
+[[cards]]
+id = "A55"
+name = "卸除鎧甲"
+kind = "move"
+cls = "盜賊"
+traits = ["變化"]
+text = "[發_蓋2]：選擇對方 1 張裝備或增益卡捨棄。"
+subject = "a razor-sharp curved parrying dagger twisting and snapping the leather straps of heavy plate armor"
+details = "broken buckles and steel armor pieces flying apart in mid-air, exposed enemy vulnerability, swift precision motion"
+
+[[cards]]
+id = "A56"
+name = "火球"
+kind = "move"
+cls = "法師"
+traits = ["法術", "火"]
+text = "[發_蓋3]：對方直擊2。"
+subject = "a colossal swirling fiery sphere of molten plasma hurling forward leaving a scorched blazing trail"
+details = "crackling orange flames, burning embers flying, intense heat distortion waves bending the background"
+
+[[cards]]
+id = "A57"
+name = "塗毒"
+kind = "move"
+cls = "盜賊"
+traits = ["變化", "毒"]
+text = "[發_蓋2]：當歸還時，將 [Ex-中毒] 加入對方經驗。"
+subject = "a rogue carefully dripping thick viscous emerald poison along the jagged serrated groove of a curved stiletto"
+details = "venomous droplet hanging from vial rim, toxic green glint on steel, gloved fingertips, dimly lit dungeon corner"
+
+[[cards]]
+id = "A58"
+name = "Explosion!"
+kind = "move"
+cls = "法師"
+traits = ["法術", "火"]
+text = "[先_怒10]：對方直擊4，然後我方收招，並跳過我方下個回合的抽牌階段。"
+subject = "a cataclysmic apocalyptic explosion of crimson flame and black smoke billowing upward in a towering mushroom cloud"
+details = "ground vaporized into molten magma, blinding white center flash, shockwave flattening ancient pillars, overwhelming scale"
+
+[[cards]]
+id = "A59"
+name = "公開資訊"
+kind = "move"
+cls = "商人"
+traits = ["市場"]
+text = "[經]：當此卡被蓋為裏側時，翻開最多 3 張我方裏側經驗，然後捨棄此卡。"
+subject = "a grand illuminated ledger displaying fluctuating market charts and trading scrolls laid out under scrutiny"
+details = "magnifying glass over fine handwritten ledgers, abacus beads arranged, bright clear daylight streaming through window"
+
+[[cards]]
+id = "A60"
+name = "狙擊蓄力"
+kind = "move"
+cls = "弓箭手"
+traits = ["變化"]
+text = "[發_蓋4]：抽2，再選擇 1 張手牌放到牌組頂。"
+subject = "a sniper bow drawn to absolute maximum tension with swirling spiral wind condensing around the arrow tip"
+details = "groaning wooden bow limbs, taut trembling bowstring, hyper-concentrated eye visible under hood, suspended dust particles"
+
+[[cards]]
+id = "A61"
+name = "熔岩之擊"
+kind = "move"
+cls = "劍士"
+traits = ["攻擊", "火"]
+text = "[發_怒3]：對方直擊1。"
+subject = "a heavy greatsword superheated into glowing molten lava crashing into the ground with splashing magma"
+details = "molten rock sprays, glowing fissure cracking open on earth, intense heat haze, radiant orange light reflecting off armor"
+
+[[cards]]
+id = "A63"
+name = "財富管理"
+kind = "move"
+cls = "商人"
+traits = ["市場"]
+text = "[發_蓋1]：必須將牌組上方 3 張卡以裏側放入經驗區。\n[經]：當此卡被蓋為裏側時，必須選擇 2 張經驗放回牌組底。"
+subject = "a massive reinforced steel vault door opening to reveal towering stacks of golden coins and jeweled chests"
+details = "heavy intricate clockwork lock gears, glittering golden reflection flooding the room, meticulous organized treasure"
+
+[[cards]]
+id = "A64"
+name = "嘲諷"
+kind = "move"
+cls = "劍士"
+traits = ["變化"]
+text = "此卡只能在先手步驟出招，出招時必須支付 [蓋2]。\n[先]：當對方收招時，且對方戰鬥區沒有招式，我方可以繼續出招，不直接進入傷害計算。\n當傷害計算時，我方 +0−4X。X＝我方招式卡疊的卡數。"
+subject = "an armored warrior banging a sword against a dented shield with a mocking wide grin provoking all nearby enemies"
+details = "clanging metal soundwaves, arrogant tilted chin, enemy shadows turning aggressively toward him, battle frenzy"
+
+[[cards]]
+id = "A65"
+name = "生命偷取"
+kind = "move"
+cls = "弓箭手"
+traits = ["攻擊", "回復"]
+text = "[頂]：當我方追擊判定成功時，回復 2。"
+subject = "a barbed enchanted arrow extracting swirling crimson life essence from a target, siphoning back to the archer"
+details = "glowing scarlet energy strands weaving into the bow, rejuvenating soft glow around wounds, dynamic vampire archer feel"
+
+[[cards]]
+id = "A68"
+name = "生命藥水"
+kind = "move"
+cls = "共用"
+traits = ["藥水", "回復"]
+text = "[發_蓋3]：回復 3。"
+subject = "an ornate glass potion flask glowing with radiant effervescent crimson liquid with floating sparkling bubbles"
+details = "golden filigree stopper, translucent glass facets catching ambient light, soothing restorative aura radiating around it"
+
+[[cards]]
+id = "A69"
+name = "職業專精書"
+kind = "move"
+cls = "共用"
+traits = ["變化"]
+text = "[發_蓋1]：看牌組上方 5 張卡，選擇其中 1 張職業卡加入手牌，其餘隨機放到牌組底。"
+subject = "an opened masterwork tome with golden gilded pages displaying glowing diagrams of combat mastery"
+details = "floating holographic battle martial stances hovering above open book, leather bookmark, wisdom and enlightenment theme"
+
+[[cards]]
+id = "A70"
+name = "洩憤"
+kind = "move"
+cls = "劍士"
+traits = ["變化"]
+text = "[發_蓋3]：將怒氣區上方 2 張卡捨棄，然後其中的職業卡加入手牌。"
+subject = "an enraged fighter in a reckless berserker frenzy hacking downward with unbridled brute fury"
+details = "shattered weapon fragments flying, explosive ground impact, ferocious grimace, wild kinetic muscle tension"
+
+[[cards]]
+id = "A71"
+name = "整理魔導書"
+kind = "move"
+cls = "法師"
+traits = ["變化"]
+text = "[頂]：當歸還時，抽X。X＝我方戰鬥區白板卡的張數。"
+subject = "magical spell scrolls and levitating parchment pages systematically organizing themselves into an arcane grimoire"
+details = "glowing glyphs aligning in mid-air, floating feather quill inking lines, soft studious candlelight, serene arcane study"
+
+[[cards]]
+id = "A72"
+name = "狩獵印記"
+kind = "move"
+cls = "盜賊"
+traits = ["印記"]
+text = "[先]：當對方收招時，抽X。X＝3 − 對方戰鬥區的招式張數，最低為 0。"
+subject = "a sinister glowing bloodhound skull brand magically imprinted on a fleeing prey's shoulder"
+details = "smoldering crimson mark, smoke wafting from brand, predator's silhouette watching closely from tree canopy"
+
+[[cards]]
+id = "A73"
+name = "追跡箭矢"
+kind = "move"
+cls = "弓箭手"
+traits = ["攻擊"]
+text = "此卡追擊判定必定成功。\n[發_蓋2]：抽1。\n[追]：抽1。"
+subject = "a self-guiding enchanted arrow curving gracefully in mid-flight following an erratic target's trail"
+details = "spiraling cyan wind trail tracing its curved trajectory, arrow tip glowing with hunting runes, extreme agility"
+
+[[cards]]
+id = "C1"
+name = "勇者"
+kind = "character"
+cls = "劍士"
+traits = ["角色"]
+text = "總和攻擊15以上時，攻擊+3"
+subject = "a determined young warrior with piercing eyes holding an ancient iron broadsword with battle scars"
+details = "rugged steel chestplate with gold engravings, resolute battle-ready expression, windblown crimson cape, dramatic rim lighting"
+
+[[cards]]
+id = "C2"
+name = "刺客"
+kind = "character"
+cls = "盜賊"
+traits = ["角色"]
+text = "判定成功時，攻擊+2"
+subject = "a lethal assassin cloaked in midnight-black hood with glowing amber eyes partially concealed by shadows"
+details = "holding twin poisoned daggers reflecting moonlight, leather harness with vials, ethereal shadow mist drifting from cloak"
+
+[[cards]]
+id = "C3"
+name = "商人"
+kind = "character"
+cls = "商人"
+traits = ["角色"]
+text = "抽牌時看牌組上方2張牌選1張加手牌，另一張放回底部"
+subject = "a shrewd, charismatic merchant in ornate embroidered velvet robes inspecting an antique golden coin"
+details = "luxurious fur collar, ornate brass weighing scale and leather coin pouches hanging from belt, subtle cunning smile"
+
+[[cards]]
+id = "C4"
+name = "遊俠"
+kind = "character"
+cls = "弓箭手"
+traits = ["角色"]
+text = "獲得【瞄準】。"
+subject = "a sharp-eyed elven ranger in forest-green leather tunic drawing a mastercrafted recurve composite bow"
+details = "focused predatory gaze, quiver overflowing with fletched arrows, oak leaves rustling around shoulders in the forest wind"
+
+[[cards]]
+id = "C5"
+name = "法師"
+kind = "character"
+cls = "法師"
+traits = ["角色"]
+text = "起始手牌額外抽3張。"
+subject = "a wise arcane scholar with glowing mystical tattoos hovering an ancient levitating spellbook illuminated by azure light"
+details = "flowing deep sapphire robes with embroidered runes, swirling arcane sparks dancing on fingertips, intense concentrated aura"
+
+[[cards]]
+id = "C6"
+name = "先人"
+kind = "character"
+cls = "盜賊"
+traits = ["角色"]
+text = "先攻的回合中，我方攻擊+X。X=我方出招張數-1。"
+subject = "a veteran rogue wanderer leaning against a stone ruin, flipping an ornate throwing knife with effortless mastery"
+details = "weathered trench coat, bandaged hands, sly confident smirk, autumn leaves swirling around boots"
+
+[[cards]]
+id = "C7"
+name = "後人"
+kind = "character"
+cls = "劍士"
+traits = ["角色"]
+text = "後攻的回合中，我方總防禦值+2。"
+subject = "a vigilant stoic guardian knight planted firmly with a massive heavy shield bearing an embossed lion crest"
+details = "polished knightly full plate armor with minor dents, unwavering defensive stance, ground cracked under sturdy greaves"
+
+[[cards]]
+id = "E1"
+name = "幸運兔腳"
+kind = "equip"
+cls = "盜賊"
+slot = "飾品"
+traits = []
+text = "(回合1次)[蓋2]：當我方追擊判定失敗時，額外翻 1 張卡做追擊判定。"
+subject = "a mystical preserved rabbit foot amulet bound with worn dark leather cords and bronze beads"
+details = "soft weathered fur, faint glimmering golden fairy dust hovering around it, resting on an old dark oak tavern table"
+
+[[cards]]
+id = "E2"
+name = "家族相片"
+kind = "equip"
+cls = "劍士"
+slot = "飾品"
+traits = []
+text = "[蓋1_怒2]：當回合開始時，回復1。"
+subject = "a cherished vintage miniature family portrait in a tarnished silver locket with cracked glass"
+details = "faded sepia tones showing a warm embrace, dried pressed flower petal beside it, resting on a soldier's scarred armor plate"
+
+[[cards]]
+id = "E3"
+name = "瞄準器"
+kind = "equip"
+cls = "弓箭手"
+slot = "飾品"
+traits = []
+text = "獲得【瞄準】。"
+subject = "an intricate brass optical aiming scope with precision glass lenses and finely engraved crosshairs"
+details = "mounted on polished dark walnut wood, delicate brass gear wheels, gleaming reflections of dawn light through lens"
+
+[[cards]]
+id = "E4"
+name = "招財貓"
+kind = "equip"
+cls = "商人"
+slot = "飾品"
+traits = []
+text = "[蓋2]：當爆發時，抽1。"
+subject = "a vintage carved porcelain beckoning cat statue holding a shiny large ancient golden ingot"
+details = "hand-painted red and black collar with a brass bell, delicate hairline cracks on glazed porcelain, surrounded by copper coins"
+
+[[cards]]
+id = "E5"
+name = "冰與雷之曲"
+kind = "equip"
+cls = "法師"
+slot = "飾品"
+traits = []
+text = "[蓋2]：當我方收招時，且我方戰鬥區的卡共有特徵「冰」「電」，抽1，回復1。"
+subject = "a magnificent twin-gemstone pendant intertwining a frosty crystal sapphire and a crackling violet thunder stone"
+details = "intertwined silver filigree setting, tiny sparks of lightning arcing over frost crystals, resting on dark silk"
+
+[[cards]]
+id = "E6"
+name = "元素法典"
+kind = "equip"
+cls = "法師"
+slot = "飾品"
+traits = []
+text = "[蓋3]：當我方收招時，且我方戰鬥區有【元素】特徵時，從表側經驗選擇 1 張有相同【元素】特徵的卡加入手牌。"
+subject = "a thick leather-bound ancient elemental grimoire locked with bronze clasps, pulsing with multicolored magical veins"
+details = "embossed elemental symbols of fire, frost and storm on worn leather cover, faint glowing vapor seeping from parchment edges"
+
+[[cards]]
+id = "E7"
+name = "布甲"
+kind = "equip"
+cls = "共用"
+slot = "防具"
+traits = []
+text = "[蓋1]：當我方收招時，+0+1。"
+subject = "a reinforced traveler's padded cloth armor vest folded neatly on a wooden armory bench"
+details = "heavy stitched layered linen, hardened leather shoulder patches, steel buckles with minor scuffs, sturdy practical craftsmanship"
+
+[[cards]]
+id = "E8"
+name = "木棍"
+kind = "equip"
+cls = "共用"
+slot = "武器"
+traits = []
+text = "[蓋1]：當我方收招時，+1+0。"
+subject = "a heavy solid hardwood quarterstaff polished smooth by years of rigorous martial arts training"
+details = "spiral leather-wrapped grip, iron caps at both ends with scratched surfaces, resting upright against a mossy stone wall"
+
+[[cards]]
+id = "X1"
+name = "Ex-中毒"
+kind = "ex"
+cls = "共用"
+traits = ["減益", "毒"]
+text = "[經]：當回合開始時，直擊我方1。\n當此卡離開經驗區時，移除遊戲。"
+subject = "a cracked clay vial tipped over, spilling thick bubbling emerald venom that violently hisses on the cold floor"
+details = "noxious green mist rising in tendrils, dissolving stone texture, sinister toxic bubbles, dark grim atmosphere"
+
+[[cards]]
+id = "X2"
+name = "Ex-流血"
+kind = "ex"
+cls = "共用"
+traits = ["減益"]
+text = "[經]：我方 +0−1。\n當此卡離開經驗區時，移除遊戲。"
+subject = "a jagged cruel barbed blade dripping fresh crimson blood onto cold weathered cobblestones"
+details = "splatters of dark crimson droplets frozen mid-air, harsh edge highlights on stained steel, tense ominous presence"
