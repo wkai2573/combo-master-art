@@ -21,3 +21,9 @@ description: 自動呼叫生圖引擎並執行後製裁切轉檔流水線，為�
 3. **搬移原圖**：將產出的圖檔複製至 `raw_images/<id>.jpg`（或 `.png`）。
 4. **轉檔後製**：執行 `python scripts/process_cards.py <id>`，輸出 200×120 AVIF 至 `dist/<id>.avif` 並自動更新 `preview.html`。
 5. **通知使用者**：提供 `dist/<id>.avif` 與 `preview.html` 預覽，並回報剩餘缺圖數量。
+
+## 版控與資產注意事項
+
+- **原圖不入庫**：`raw_images/` 已被 `.gitignore` 排除，Agent 執行 git 指令時切勿使用 `-f` 強制加入高解析度原圖。
+- **成果提交**：完成後若需版控，只提交 `dist/<id>.avif` 與 `preview.html`。
+- **清理舊圖歷史**：若使用者提出「清舊圖存檔」或「定案壓扁歷史」，參照 `README.md` 與 `AGENTS.md` 中的 orphan branch 歷史重整 SOP。

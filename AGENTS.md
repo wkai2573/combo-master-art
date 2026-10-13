@@ -44,6 +44,24 @@
 
 ---
 
+## Git 版控與素材管理原則
+
+- **原圖不入庫**：`raw_images/` 已被 `.gitignore` 忽略，嚴禁使用 `git add -f` 強制追蹤高解析度原圖，以維持儲存庫精簡。
+- **成品與圖鑑入庫**：`dist/*.avif` 與 `preview.html` 為交付成果，應正常納入版控。
+- **清理舊圖歷史 (SOP)**：
+  - 由於未定案前替換圖檔會讓舊的二進位 blob 殘留在 Git 物件庫中，當使用者要求「清理舊圖 commit」或「卡圖正式定案壓扁歷史」時，請執行：
+    ```bash
+    git checkout --orphan temp-clean
+    git add -A
+    git commit -m "chore: production release with all finalized cards"
+    git branch -D main
+    git branch -m main
+    git gc --prune=now --aggressive
+    ```
+  - 單張微調時優先使用 `git commit --amend --no-edit`。
+
+---
+
 ## Agent skills
 
 ### 議題追蹤系統

@@ -101,3 +101,27 @@ Agent 會全自動讀取 Prompt、調用內建生圖引擎、將原圖存入 `ra
 | **批次後製與轉檔** | `python scripts/process_cards.py` | 將 raw_images/ 轉為 dist/{id}.avif (200x120) |
 | **處理指定卡片轉檔** | `python scripts/process_cards.py A37` | 僅處理指定 UID 的卡圖後製 |
 
+---
+
+## Git 版控與素材管理規範
+
+1. **AI 原圖管理 (`raw_images/`)**：
+   - AI 生成的高解析度原圖（單張約 1MB）**由 `.gitignore` 自動忽略**，避免 Git 儲存庫體積急遽膨脹。
+   - `raw_images/` 僅作為本機快取與轉檔來源，目錄透過 `.gitkeep` 保留。
+
+2. **交付成品 (`dist/`)**：
+   - 轉檔後的 200×120 `.avif` 卡圖（單張僅 2～6KB）以及 `preview.html` 納入版控，作為遊戲本體直接引用的交付成果。
+
+3. **卡圖定案後清理 Git 歷史舊圖存檔 (SOP)**：
+   - 在卡圖探索與試作期間，可正常 commit 疊代更新。
+   - 當整套（51 張）卡圖風格確認「完全定案」時，可執行以下指令將歷史壓扁為正式發布版，徹底回收試作期間累積的舊圖 blob：
+     ```bash
+     git checkout --orphan temp-clean
+     git add -A
+     git commit -m "chore: production release with all finalized cards"
+     git branch -D main
+     git branch -m main
+     git gc --prune=now --aggressive
+     ```
+   - 若為平時單張微調，可直接使用 `git commit --amend --no-edit` 覆蓋最近一次提交。
+
