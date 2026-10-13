@@ -320,8 +320,8 @@ kind = "move"
 cls = "劍士"
 traits = ["變化"]
 text = "[發_蓋3]：將怒氣區上方 2 張卡捨棄，然後其中的職業卡加入手牌。"
-subject = "an enraged fighter in a reckless berserker frenzy hacking downward with unbridled brute fury"
-details = "shattered weapon fragments flying, explosive ground impact, ferocious grimace, wild kinetic muscle tension"
+subject = "a heavy jagged broadsword hacking violently downward into shattered cobblestone in wild destructive fury"
+details = "shattered stone fragments flying, explosive ground impact craters, crimson fury sparks spraying from blade clash, intense kinetic force"
 
 [[cards]]
 id = "A71"
@@ -340,8 +340,8 @@ kind = "move"
 cls = "盜賊"
 traits = ["印記"]
 text = "[先]：當對方收招時，抽X。X＝3 − 對方戰鬥區的招式張數，最低為 0。"
-subject = "a sinister glowing bloodhound skull brand magically imprinted on a fleeing prey's shoulder"
-details = "smoldering crimson mark, smoke wafting from brand, predator's silhouette watching closely from tree canopy"
+subject = "a sinister glowing bloodhound skull brand magically hovering above a dark hunting trail in deep misty forest"
+details = "smoldering crimson mark, smoke wafting from brand, eerie predator eyes glowing faintly in dark tree canopy, tense stealth atmosphere"
 
 [[cards]]
 id = "A73"
