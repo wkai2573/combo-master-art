@@ -73,28 +73,55 @@ def generate_with_gemini_browser(prompt_info: dict, host: str = "http://127.0.0.
             context = browser.contexts[0] if browser.contexts else browser.new_context()
             page = context.pages[0] if context.pages else context.new_page()
 
-            # Ensure 3.1 Pro
-            pro_option = page.locator('text="3.1 Pro"').first
-            if pro_option.is_visible():
-                pro_option.click()
-                time.sleep(0.5)
+            # Ensure clean chat page
+            page.keyboard.press("Escape")
+            time.sleep(0.3)
+            
+            # Click '新對話' if on chat page
+            new_chat_btn = page.locator('button:has-text("新對話"), a:has-text("新對話")').first
+            if new_chat_btn.is_visible():
+                try:
+                    new_chat_btn.click(force=True)
+                    time.sleep(1)
+                except Exception:
+                    pass
+            elif page.url != "https://gemini.google.com/app":
+                page.goto("https://gemini.google.com/app")
+                page.wait_for_load_state("domcontentloaded")
+                time.sleep(1.5)
+
+            # Close any leftover backdrop
+            page.keyboard.press("Escape")
+            time.sleep(0.3)
+
+            # Ensure 3.1 Pro mode
+            picker = page.locator('button[aria-label*="開啟模式挑選器"]').first
+            if picker.is_visible() and "Pro" not in picker.inner_text():
+                try:
+                    picker.click(force=True)
+                    time.sleep(0.8)
+                    page.locator('text="3.1 Pro"').first.click(force=True)
+                    time.sleep(0.8)
+                except Exception:
+                    pass
 
             # Fill editor
             editor = page.locator('div[contenteditable="true"]').first
-            editor.click()
+            editor.click(force=True)
+            time.sleep(0.3)
             editor.fill(prompt_text)
             time.sleep(0.5)
 
             # Send prompt
             send_btn = page.locator('button[aria-label="傳送訊息"]').first
             if send_btn.is_visible():
-                send_btn.click()
+                send_btn.click(force=True)
             else:
                 editor.press("Enter")
 
             print("[*] 提示詞已送出，正在等待 Gemini 生成圖片...")
             start_time = time.time()
-            max_wait = 75
+            max_wait = 90
             found_b64 = None
 
             while time.time() - start_time < max_wait:
@@ -118,7 +145,7 @@ def generate_with_gemini_browser(prompt_info: dict, host: str = "http://127.0.0.
                                 break
                 if found_b64:
                     break
-                time.sleep(2.5)
+                time.sleep(3)
 
             if not found_b64:
                 print("[!] 等待生成逾時或未偵測到產出圖片。")
