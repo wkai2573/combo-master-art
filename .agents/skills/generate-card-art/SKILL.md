@@ -24,6 +24,5 @@ description: 自動呼叫生圖引擎並執行後製裁切轉檔流水線，為�
 
 ## 版控與資產注意事項
 
-- **原圖不入庫**：`raw_images/` 已被 `.gitignore` 排除，Agent 執行 git 指令時切勿使用 `-f` 強制加入高解析度原圖。
-- **成果提交**：完成後若需版控，只提交 `dist/<id>.avif` 與 `preview.html`。
-- **清理舊圖歷史**：若使用者提出「清舊圖存檔」或「定案壓扁歷史」，參照 `README.md` 與 `AGENTS.md` 中的 orphan branch 歷史重整 SOP。
+- **素材不入庫**：`raw_images/`、`dist/` 與 `preview.html` 皆已被 `.gitignore` 排除，Agent 執行 git 指令時切勿使用 `-f` 強制加入任何圖片或預覽檔案。
+- **成果提交**：本專案 Git 僅追蹤代碼、Prompt 資料庫 (`data/cards.toml`) 與設定。若生圖流程中有調整 prompt，只提交 `data/cards.toml` 與相關配置檔。

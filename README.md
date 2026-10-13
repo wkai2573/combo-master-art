@@ -15,13 +15,13 @@ combo-master-art/
 │   └── prompts.json        # 自動編譯出的完整生圖提示詞檔
 ├── config/
 │   └── style_guide.toml    # [視覺規範] 統一風格指南 (5:3 比例、多構圖分流)
-├── raw_images/             # AI 產出的高解析度原始圖 (支援 .png / .jpg / .webp)
-├── dist/                   # [最終成品] 200x120 .avif 格式卡圖 (以 UID 命名，如 A37.avif)
+├── raw_images/             # AI 產出的高解析度原始圖 (支援 .png / .jpg / .webp，不納入版控)
+├── dist/                   # [本地快取] 200x120 .avif 格式卡圖 (不納入版控，目錄透過 .gitkeep 保留)
 ├── scripts/
 │   ├── import_cards.py     # 自遊戲專案增量匯入卡片資料 (支援 --force)
 │   ├── build_prompts.py    # 提示詞組裝腳本 (依 kind 混入動態/靜物/肖像構圖)
 │   └── process_cards.py    # 批次裁切縮放與 AVIF 轉檔腳本 (自動產出 preview.html)
-├── preview.html            # 本地卡圖預覽與圖鑑頁面
+├── preview.html            # 本地卡圖預覽與圖鑑頁面 (由腳本產生，不納入版控)
 └── README.md               # 本指南
 ```
 
@@ -105,23 +105,11 @@ Agent 會全自動讀取 Prompt、調用內建生圖引擎、將原圖存入 `ra
 
 ## Git 版控與素材管理規範
 
-1. **AI 原圖管理 (`raw_images/`)**：
-   - AI 生成的高解析度原圖（單張約 1MB）**由 `.gitignore` 自動忽略**，避免 Git 儲存庫體積急遽膨脹。
-   - `raw_images/` 僅作為本機快取與轉檔來源，目錄透過 `.gitkeep` 保留。
+1. **純文字與管線定位**：
+   - 本專案儲存庫為 **純 Prompt 與自動化管線工具箱**，保持 100% 純文字代碼，避免頻繁替換圖片二進位 blob 造成 Git 膨脹。
+   - `raw_images/`、`dist/` 與 `preview.html` 全數由 `.gitignore` 自動忽略，僅保留目錄結構佔位檔（`.gitkeep`）。
 
-2. **交付成品 (`dist/`)**：
-   - 轉檔後的 200×120 `.avif` 卡圖（單張僅 2～6KB）以及 `preview.html` 納入版控，作為遊戲本體直接引用的交付成果。
-
-3. **卡圖定案後清理 Git 歷史舊圖存檔 (SOP)**：
-   - 在卡圖探索與試作期間，可正常 commit 疊代更新。
-   - 當整套（51 張）卡圖風格確認「完全定案」時，可執行以下指令將歷史壓扁為正式發布版，徹底回收試作期間累積的舊圖 blob：
-     ```bash
-     git checkout --orphan temp-clean
-     git add -A
-     git commit -m "chore: production release with all finalized cards"
-     git branch -D main
-     git branch -m main
-     git gc --prune=now --aggressive
-     ```
-   - 若為平時單張微調，可直接使用 `git commit --amend --no-edit` 覆蓋最近一次提交。
+2. **卡圖成品交付途徑**：
+   - 卡圖在本地生成至 `dist/` 後，可隨時開啟 `preview.html` 進行本機視覺檢視。
+   - 當整批卡圖完成定案時，可直接拷貝至遊戲專案（例如 `combo-master`），或透過 GitHub Release 打包為 zip 發布。
 

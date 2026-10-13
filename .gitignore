@@ -2,6 +2,13 @@
 raw_images/*
 !raw_images/.gitkeep
 
+# 轉檔產出卡圖 (本地快取，不納入版控；保留目錄結構)
+dist/*
+!dist/.gitkeep
+
+# 本地圖鑑預覽頁面 (本地生成，不納入版控)
+preview.html
+
 # 備份檔與暫存檔
 *.bak
 *.tmp

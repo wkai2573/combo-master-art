@@ -47,18 +47,10 @@
 ## Git 版控與素材管理原則
 
 - **原圖不入庫**：`raw_images/` 已被 `.gitignore` 忽略，嚴禁使用 `git add -f` 強制追蹤高解析度原圖，以維持儲存庫精簡。
-- **成品與圖鑑入庫**：`dist/*.avif` 與 `preview.html` 為交付成果，應正常納入版控。
-- **清理舊圖歷史 (SOP)**：
-  - 由於未定案前替換圖檔會讓舊的二進位 blob 殘留在 Git 物件庫中，當使用者要求「清理舊圖 commit」或「卡圖正式定案壓扁歷史」時，請執行：
-    ```bash
-    git checkout --orphan temp-clean
-    git add -A
-    git commit -m "chore: production release with all finalized cards"
-    git branch -D main
-    git branch -m main
-    git gc --prune=now --aggressive
-    ```
-  - 單張微調時優先使用 `git commit --amend --no-edit`。
+- **產出圖檔與預覽不入庫**：`dist/`（AVIF 格式卡圖快取）與 `preview.html`（本地圖鑑預覽）已被 `.gitignore` 忽略，純粹作為本地生成與檢視工具，不納入 Git 版控。Git 僅追蹤代碼、Prompt 資料庫 (`data/cards.toml`) 與風格配置。
+- **素材交付與定案**：
+  - 本專案儲存庫保持 100% 純文字乾淨度，避免頻繁替換二進位圖檔導致 Git blob 膨脹。
+  - 當卡圖滿意定案時，可直接拷貝至遊戲專案（如 `combo-master`）或以 GitHub Release (zip 壓縮包) 發布交付。
 
 ---
 
