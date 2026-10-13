@@ -16,10 +16,11 @@ colors = "Muted, earthy and weathered color palette with rich deep shadows and d
 atmosphere = "Atmospheric dust motes, drifting ash or wind currents, gritty textured environment"
 
 # 依卡片類型 (kind) 切分的構圖視角
-composition_move = "Dynamic combat action framing, intense martial motion, powerful strike impact, cinematic wide shot"
+composition_move = "Focus on weapons, kinetic energy trails, spell impacts or battlefield still life, no humans, dynamic martial atmosphere"
 composition_equip = "Ground-level still life angle, focused artifact composition, pristine weapon and item close-up, dramatic lighting"
 composition_character = "Upper-body heroic character portrait, expressive combat-ready stance, atmospheric depth, focused gaze"
 composition_ex = "Visceral affliction close-up, ominous dark aura swirling, haunting symbolic framing, intense mood"
 composition_buff = "Ethereal spiritual aura, flowing vital energy currents, meditative posture, glowing mystical atmosphere"
 
 negative_prompt = "text, letters, words, writing, signature, watermark, logo, border, card frame, user interface, UI, buttons, modern objects, plastic, digital rendering, flat shading, 3d render, oversaturated, blurry, lowres, deformed anatomy, bad hands, missing fingers, extra limbs"
+negative_prompt_no_humans = "human, person, people, warrior, soldier, archer, wizard, face, character, body, hands, fingers, skin"

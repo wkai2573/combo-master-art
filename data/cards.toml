@@ -20,8 +20,8 @@ kind = "move"
 cls = "弓箭手"
 traits = ["攻擊"]
 text = "[追]：我方 +0+4。"
-subject = "an ethereal archer in motion releasing a phantom translucent arrow that splits into spectral duplicates"
-details = "ghostly cyan glow, blurred motion trail, dynamic archery release pose, dark misty forest atmosphere"
+subject = "a glowing phantom translucent arrow speeding mid-air and splitting into three spectral duplicates leaving blurred cyan light trails"
+details = "spectral cyan glow, arrow cutting through dark misty forest air, energy ripples, autumn leaves disturbed by flight draft, dynamic projectile shot"
 
 [[cards]]
 id = "A38"
@@ -30,8 +30,8 @@ kind = "move"
 cls = "弓箭手"
 traits = ["陷阱"]
 text = "[追]：我方 +3+0。"
-subject = "a concealed mechanical pressure mine suddenly detonating with fire and shrapnel hidden beneath dry leaves"
-details = "flying soil and fiery spark bursts, tripwire snapping, explosive shockwave radiating outward, tense ambush visual"
+subject = "a concealed iron pressure mine detonating with fiery sparks and jagged shrapnel bursting from dry leaves"
+details = "flying dark soil, fiery embers, snapped copper tripwire, explosive shockwave rippling through fallen autumn foliage, uninhabited wilderness ground close-up"
 
 [[cards]]
 id = "A39"
@@ -40,8 +40,8 @@ kind = "move"
 cls = "劍士"
 traits = ["攻擊"]
 text = "[頂]：我方 +1+2。"
-subject = "a disciplined warrior thrusting a short sword forward while maintaining a rock-solid guard behind a buckler"
-details = "sparks flying from steel collision, rigid poised footwork, controlled kinetic force, focused determined eyes"
+subject = "a heavy round iron buckler shield with battle dents leaning against stone ruins, paired with a sharp steel short sword thrust into the ground"
+details = "stone ruins backdrop, dry fallen autumn leaves scattered on the ground, faint sparks and dust motes in the air, deep chiaroscuro lighting, grounded defensive stance visual, pristine artifact close-up"
 
 [[cards]]
 id = "A40"

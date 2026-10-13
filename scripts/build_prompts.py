@@ -44,6 +44,10 @@ def build_card_prompt(card: dict, style_cfg: dict) -> dict:
     ]
     positive_prompt = ", ".join(seg for seg in prompt_segments if seg)
     negative_prompt = style.get("negative_prompt", "").strip()
+    if kind != "character":
+        neg_no_humans = style.get("negative_prompt_no_humans", "").strip()
+        if neg_no_humans:
+            negative_prompt = f"{negative_prompt}, {neg_no_humans}" if negative_prompt else neg_no_humans
 
     return {
         "id": card["id"],
