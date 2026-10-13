@@ -41,6 +41,101 @@ def get_card_prompt(card_id: str) -> Optional[dict]:
     return None
 
 
+def check_cdp_browser(host: str = "http://127.0.0.1:9222") -> bool:
+    try:
+        import urllib.request
+        req = urllib.request.Request(f"{host}/json/version", method="GET")
+        with urllib.request.urlopen(req, timeout=1.0) as response:
+            return response.status == 200
+    except Exception:
+        return False
+
+
+def generate_with_gemini_browser(prompt_info: dict, host: str = "http://127.0.0.1:9222") -> Path | None:
+    card_id = prompt_info["id"]
+    print(f"[*] 正在透過已登入的 Chrome 瀏覽器 (Gemini Pro) 生成卡圖...")
+    try:
+        from playwright.sync_api import sync_playwright
+    except ImportError:
+        print("[!] 尚未安裝 playwright，請先執行 pip install playwright。")
+        return None
+
+    prompt_text = (
+        f"請生成一張 16:9 橫向卡牌插畫：\n"
+        f"{prompt_info['positive_prompt']}\n"
+        f"完全不要出現文字、文字標籤或外框。"
+    )
+
+    try:
+        import time
+        with sync_playwright() as p:
+            browser = p.chromium.connect_over_cdp(host)
+            context = browser.contexts[0] if browser.contexts else browser.new_context()
+            page = context.pages[0] if context.pages else context.new_page()
+
+            # Ensure 3.1 Pro
+            pro_option = page.locator('text="3.1 Pro"').first
+            if pro_option.is_visible():
+                pro_option.click()
+                time.sleep(0.5)
+
+            # Fill editor
+            editor = page.locator('div[contenteditable="true"]').first
+            editor.click()
+            editor.fill(prompt_text)
+            time.sleep(0.5)
+
+            # Send prompt
+            send_btn = page.locator('button[aria-label="傳送訊息"]').first
+            if send_btn.is_visible():
+                send_btn.click()
+            else:
+                editor.press("Enter")
+
+            print("[*] 提示詞已送出，正在等待 Gemini 生成圖片...")
+            start_time = time.time()
+            max_wait = 75
+            found_b64 = None
+
+            while time.time() - start_time < max_wait:
+                imgs = page.locator('img').all()
+                for img in imgs:
+                    src = img.get_attribute('src') or ''
+                    if 'blob:' in src or 'googleusercontent' in src:
+                        box = img.bounding_box()
+                        if box and box['width'] > 200 and box['height'] > 120:
+                            found_b64 = page.evaluate('''(selector) => {
+                                const img = document.querySelector(selector);
+                                if (!img) return null;
+                                const canvas = document.createElement('canvas');
+                                canvas.width = img.naturalWidth || img.width;
+                                canvas.height = img.naturalHeight || img.height;
+                                const ctx = canvas.getContext('2d');
+                                ctx.drawImage(img, 0, 0);
+                                return canvas.toDataURL('image/jpeg', 0.95).split(',')[1];
+                            }''', f'img[src="{src}"]')
+                            if found_b64:
+                                break
+                if found_b64:
+                    break
+                time.sleep(2.5)
+
+            if not found_b64:
+                print("[!] 等待生成逾時或未偵測到產出圖片。")
+                return None
+
+            out_file = RAW_DIR / f"{card_id}.jpg"
+            RAW_DIR.mkdir(parents=True, exist_ok=True)
+            with open(out_file, "wb") as f:
+                f.write(base64.b64decode(found_b64))
+
+            print(f"[✓] 成功由 Gemini 瀏覽器生成大圖: {out_file.name}")
+            return out_file
+    except Exception as e:
+        print(f"[!] 瀏覽器生圖過程發生錯誤: {e}")
+        return None
+
+
 def check_local_sd_webui(host: str = "http://127.0.0.1:7860") -> bool:
     try:
         import urllib.request
@@ -199,12 +294,15 @@ def process_card_flow(card_id: str):
     print(f"==================================================")
 
     # 1. 偵測可用的生圖後端
+    cdp_ready = check_cdp_browser()
     gemini_key = os.environ.get("GEMINI_API_KEY")
     openai_key = os.environ.get("OPENAI_API_KEY")
     sd_ready = check_local_sd_webui()
 
     generated_path = None
-    if sd_ready:
+    if cdp_ready:
+        generated_path = generate_with_gemini_browser(prompt_info)
+    elif sd_ready:
         generated_path = generate_with_sd_webui(prompt_info)
     elif gemini_key:
         generated_path = generate_with_gemini(prompt_info, gemini_key)
